@@ -1,0 +1,14 @@
+package Boletines;
+
+public class Matriztest {
+
+	public static void main(String[] args) {
+		
+		
+		Matriz m=new Matriz(4);
+		m.generarValores();
+		System.out.println(m.toString());
+
+	}
+
+}

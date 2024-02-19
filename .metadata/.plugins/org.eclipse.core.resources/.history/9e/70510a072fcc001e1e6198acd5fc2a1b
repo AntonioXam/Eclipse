@@ -1,0 +1,75 @@
+package Boletines;
+
+
+
+public class matriz {
+
+	//atributo
+
+	private int[][] valores;
+
+	/** Constructor
+	 * 
+	 * @param matriz
+	 */
+	public matriz() {
+		valores=new int[3][3];
+	}
+
+
+	public matriz(int n) {
+		valores=new int[n][n];
+	}
+
+	public matriz(int n,int m) {
+		valores=new int[n][m];
+	}
+
+	
+
+
+	public void generarValores() {
+		for (int i = 0; i < valores.length; i++) {
+			for (int j = 0; j < valores[i].length; j++) 
+				
+				valores[i][j]=(int)(Math.random()*10);
+			
+
+		}
+	}
+
+	public int mayorValor() {
+		int mayor=valores[0][0];
+
+		for (int i = 0; i < valores.length; i++) {
+			for (int j = 0; j < valores[i].length; j++) {
+				if (valores[i][j]>mayor) {
+					mayor=valores[i][j];
+				}
+			}
+
+		}
+		return mayor;
+
+
+	}
+
+	public int menorValor() {
+
+		int menor=valores[0][0];
+		for (int i = 0; i < valores.length; i++) {
+			for (int j = 0; j < valores[i].length; j++) {
+				if (valores[i][j]<menor) {
+					menor=valores[i][j];
+				}
+			} 
+		}
+		return menor;
+
+	}
+}
+
+
+
+
+

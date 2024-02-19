@@ -1,0 +1,56 @@
+package Boletines;
+
+import java.util.Arrays;
+
+public class matriz {
+
+	//atributo
+
+	private int[][] matriz=new int[3][3];
+
+	/**
+	 * @param matriz
+	 */
+	public matriz(int[][] matriz) {
+		this.matriz = matriz;
+	}
+
+	/**
+	 * @return el matriz
+	 */
+	public matriz(int n) {
+		this.matriz = matriz;
+	}
+
+	public matriz(int n,int m) {
+		this.matriz = matriz;
+	}
+
+	public int[][] getMatriz() {
+		return matriz;
+	}
+
+	/**
+	 * @param matriz el matriz a establecer
+	 */
+	public void setMatriz(int[][] matriz) {
+		this.matriz = matriz;
+	}
+
+	@Override
+	public String toString() {
+		return "matriz [matriz=" + Arrays.toString(matriz) + "]";
+	}
+
+
+	
+	
+	
+
+}
+
+
+
+
+
+

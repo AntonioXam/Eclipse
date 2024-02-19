@@ -1,0 +1,34 @@
+package Ejerciciocadena;
+
+import java.util.Scanner;
+
+public class Cadenatest {
+
+	public static void main(String[] args) {
+		
+		Cadena C=new Cadena();
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			 
+			System.out.print("Dime un cadena de caracteres: ");
+			C.setCadena(sc.nextLine());
+			
+			System.out.println("Nombre: "+C.getCadena());
+			System.out.println("Nº Vocales: "+C.contarVocales());
+			System.out.println("Nº Consonantes"+C.contarConsonantes());
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+
+	}
+
+}

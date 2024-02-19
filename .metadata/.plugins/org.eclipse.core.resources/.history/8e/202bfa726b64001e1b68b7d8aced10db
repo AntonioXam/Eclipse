@@ -1,0 +1,12 @@
+
+
+	public class BucleForEjemplo {
+	    public static void main(String[] args) {
+	        // Imprimir números del 1 al 5 usando un bucle for
+	        for (int i = 1; i <= 8; i++) {
+	            System.out.println("Número: " + i);
+	        }
+	    }
+	}
+
+}

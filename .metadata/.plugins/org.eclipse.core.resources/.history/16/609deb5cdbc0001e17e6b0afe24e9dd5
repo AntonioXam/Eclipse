@@ -1,0 +1,141 @@
+package Repaso;
+
+public class Entero {
+
+	//Atributo
+
+	private int numero;
+
+	/** Metodo
+	 * contructor por defecto que no recibe ningun parametro
+	 * 
+	 */
+
+	public Entero() {
+
+		numero=0;
+	}
+
+	/** contructor
+	 * @param numero - valor entero
+	 */
+	public Entero(int numero) {
+		this.numero = numero;
+	}
+
+	/** Devuelve el valor del entero almacenado
+	 * @return numero entero
+	 */
+	public int getNumero() {
+		return numero;
+	}
+
+	/** Establece un valor para el numero entero
+	 * @param numero el numero a establecer
+	 */
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+
+	/** Indica si el valor almacenado es positivo
+	 * 
+	 * @return true si es positivo o false si es negativo en el numero almacenado
+	 */
+	public boolean espositivo() {
+
+		if (numero>0) 
+			return true;
+
+
+		return false;
+
+	}
+	/** Indica si el valor almacenado es positivo
+	 * 
+	 * @return false si es negativo o false si es negativo en el numero almacenado
+	 */
+	public boolean escero() {
+
+		if (numero==0) {
+			return true;
+		}
+		return false;
+
+
+	}
+
+	/**
+	 * Indica el valor almacenado es mayor que el valor pasado como parametro
+	 * @param valor (numero entero)
+	 * @return true si es mayor que el paramero ,false si no lo es
+	 */
+
+	public boolean esMayor(int valor) {
+		if (numero>valor) {
+			return true;
+
+
+		}
+		return false;
+
+	}
+
+	public int doble() {
+
+		return numero=numero*2;
+
+	}
+
+	public int tripe() {
+
+		return numero=numero*3;
+
+	}
+
+
+	public double mitad() {
+		
+		return numero=numero/2;
+		
+	}
+	
+	public boolean espar() {
+		
+		if (numero%2==0) {
+			return true;
+		}
+		return false;
+		
+	}
+	
+	public boolean esprimo() {
+		for (int primo = 2; primo <=numero/2; primo++) {
+			if (numero%primo==0) {
+				return false;
+			}
+		}return true;
+	}
+	
+	
+	public double todouble() {
+		
+		return numero=(int)numero;
+		
+	}
+	
+	public int potencia(int valor) {
+		
+		int resultado = 0;
+		for (int i = 0; i < valor; i++) {
+		Math.pow(numero, valor);
+	
+		}
+		return resultado;
+		
+		
+	}
+	
+	
+	
+}

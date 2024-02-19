@@ -1,0 +1,17 @@
+package ejercicios1;
+
+public class Ejercicio16 {
+
+	public static void main(String[] args) {
+
+		int altura; int numlinea;
+
+
+		for(altura=1;altura<=4;altura++) { for(numlinea=1;numlinea<=altura;numlinea++) {
+			System.out.print("*"); }	
+		    System.out.println(); }
+
+
+	}
+
+}

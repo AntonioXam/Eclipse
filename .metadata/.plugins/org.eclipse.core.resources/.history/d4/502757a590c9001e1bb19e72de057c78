@@ -1,0 +1,15 @@
+package Ejerciciospropu;
+
+public class testCuenta {
+
+	public static void main(String[] args) {
+	
+		
+		Cuenta C=new Cuenta("Mi cuenta");
+		
+		System.out.println(C);
+		
+
+	}
+
+}

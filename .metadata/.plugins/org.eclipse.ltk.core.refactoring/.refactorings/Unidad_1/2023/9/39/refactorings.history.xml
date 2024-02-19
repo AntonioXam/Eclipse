@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copiar elemento «Operacionesaritmeticas.java» a «Unidad_1/src/ejemplos»&#x0D;&#x0A;- Proyecto original: «Unidad_1»&#x0D;&#x0A;- Elemento destino: «Unidad_1/src/ejemplos»&#x0D;&#x0A;- Elemento original: «ejemplos.Operacionesaritmeticas.java»" description="Copiar unidad de compilación" destination="/src&lt;ejemplos" element1="/src&lt;ejemplos{Operacionesaritmeticas.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1695726446495" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package ejercicios1;
+
+import java.util.Scanner;
+
+public class Ejercicio16 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int filas = sc.nextInt();
+
+		int altura; int linea;
+
+
+		for(altura=1;altura<=filas;altura++) { 
+			for(linea=1;linea<=altura;linea++) {
+				System.out.print("*"); 	}
+			System.out.println(); }
+
+		sc.close();
+	}
+
+}

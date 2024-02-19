@@ -1,0 +1,21 @@
+package Cifrado;
+
+import java.util.Scanner;
+
+public class Mensajetest {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Mensaje m=new Mensaje("Antonio Jesus zz");
+		
+		System.out.println(m.sustitucion(3));
+		
+		
+		
+		sc.close();
+
+	}
+
+}

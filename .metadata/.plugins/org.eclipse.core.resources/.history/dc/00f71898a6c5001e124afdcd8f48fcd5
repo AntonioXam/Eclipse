@@ -1,0 +1,22 @@
+package Ejemplosmath;
+
+public class PasoParametros {
+	
+	public static void incrementa(int a) {
+		a++;
+		System.out.println(a);
+	}
+
+	public static void main(String[] args) {
+		
+		int num=5;
+		
+		incrementa(num);
+		
+		System.out.println();
+		
+		
+
+	}
+
+}

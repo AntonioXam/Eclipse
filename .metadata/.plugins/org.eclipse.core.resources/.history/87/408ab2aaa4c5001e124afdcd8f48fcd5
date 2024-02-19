@@ -1,0 +1,26 @@
+package Ejemplosmath;
+
+public class EjempMath {
+
+	public static void main(String[] args) {
+
+		int num1=5;
+		int num2=8;
+
+		//Mayor
+		System.out.println("Mayor ("+num1+","+num2+"): "+Math.max(num1, num2));
+		//Menor
+		System.out.println("Mayor ("+num1+","+num2+"): "+Math.min(num1, num2));
+
+		//Cuadrado(potencia: numero elevado a 2)
+		System.out.println("Cuadrado de "+num1+": "+Math.pow(num1, 2));
+		//cubo (potencia: numero elevado a 3)
+		System.out.println("Cubo de "+num1+": "+(int)Math.pow(num1, 3));
+		//Numero aleatorio entre 1 y 100
+		System.out.println("Numero aleatorio entre 1 y 100"+(int)Math.random()*100+1);
+		//Numero aleatorio entre 0 y num1
+		System.out.println("Numero aleatroio entre 0 y "+num1+": "+Math.round(Math.random()*num1));
+
+	}
+
+}

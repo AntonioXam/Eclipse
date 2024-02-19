@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class arrraydeString {
+
+	
+	
+	private final static int TOTAL=5;
+	
+	
+	public static void imprime(String array[]) {
+		for (int i = 0; i < TOTAL; i++) {
+			System.out.print(array[i]+" ");
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// Creamos el vector que almacenará los números leídos por teclado
+				String[] vector = new String[TOTAL];
+				// Leemos los números introducidos por teclado y los almacenamos en vector
+				Scanner sc = new Scanner(System.in);
+				
+				try {
+					for (int i=0; i<TOTAL; i++) {
+						System.out.print("["+(i+1)+"] Introduce un nombre: ");
+						vector[i]=sc.nextLine();
+					}
+					
+					
+					
+				System.out.print("\nNombres introducidos: ");
+				imprime(vector);
+				} catch (Exception e) {
+
+					System.out.println("Error en la introducción de datos");
+
+				}
+				sc.close();
+				
+				
+				
+			
+			}
+		}

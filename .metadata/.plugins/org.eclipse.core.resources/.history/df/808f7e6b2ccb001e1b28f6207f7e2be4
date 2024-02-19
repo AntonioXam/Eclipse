@@ -1,0 +1,98 @@
+package Boletines;
+
+import java.util.Arrays;
+
+public class matriz {
+
+	//atributo
+
+	private int[][] matriz=new int[3][3];
+
+	/** Constructor
+	 * 
+	 * @param matriz
+	 */
+	public matriz(int[][] matriz) {
+		this.matriz = matriz;
+	}
+
+
+	// aleatorio
+	public static int aleatorio(int N) {
+		return (int) (Math.random()*N+1);
+	}
+
+	/**
+	 * @return el matriz
+	 */
+	public matriz(int n) {
+		this.matriz = matriz;
+	}
+
+	public matriz(int n,int m) {
+		this.matriz = matriz;
+	}
+
+	public int[][] getMatriz() {
+		
+		return matriz;
+	}
+
+	/**
+	 * @param matriz el matriz a establecer
+	 */
+	public void setMatriz(int[][] matriz) {
+		this.matriz = matriz;
+	}
+
+
+	@Override
+	public String toString() {
+		return "matriz [matriz=" + Arrays.toString(matriz) + "]";
+	}
+
+
+	public void generarValores() {
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				matriz[i][j]=aleatorio(9);
+			}
+
+		}
+	}
+
+	public int mayorValor() {
+		int mayor=matriz[0][0];
+
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (matriz[i][j]>mayor) {
+					mayor=matriz[i][j];
+				}
+			}
+
+		}
+		return mayor;
+
+
+	}
+
+	public int menorValor() {
+
+		int menor=matriz[0][0];
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (matriz[i][j]<menor) {
+					menor=matriz[i][j];
+				}
+			} 
+		}
+		return menor;
+
+	}
+}
+
+
+
+
+

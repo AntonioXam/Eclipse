@@ -1,0 +1,70 @@
+package Repaso;
+
+public class Entero {
+
+	//Atributo
+	
+	private int numero;
+
+	/** Metodo
+	 * contructor por defecto que no recibe ningun parametro
+	 * 
+	 */
+	 
+	public Entero() {
+		
+		numero=0;
+	}
+
+	/** contructor
+	 * @param numero - valor entero
+	 */
+	public Entero(int numero) {
+		this.numero = numero;
+	}
+
+	/** Devuelve el valor del entero almacenado
+	 * @return numero entero
+	 */
+	public int getNumero() {
+		return numero;
+	}
+
+	/** Establece un valor para el numero entero
+	 * @param numero el numero a establecer
+	 */
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	
+	/** Indica si el valor almacenado es positivo
+	 * 
+	 * @return true si es positivo o false si es negativo en el numero almacenado
+	 */
+	public boolean espositivo() {
+		
+		if (numero>0) 
+			return true;
+		
+		
+		return false;
+		
+	}
+	/** Indica si el valor almacenado es positivo
+	 * 
+	 * @return false si es negativo o false si es negativo en el numero almacenado
+	 */
+	public boolean escero() {
+		
+		if (numero==0) {
+			return true;
+		}
+		return false;
+		
+		
+	}
+	
+	
+	
+}

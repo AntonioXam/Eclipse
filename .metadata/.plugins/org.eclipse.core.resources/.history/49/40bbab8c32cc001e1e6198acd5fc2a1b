@@ -1,0 +1,17 @@
+package Ejerciciospropu;
+
+public class librotest {
+
+	public static void main(String[] args) {
+		
+		Libro libor1=new Libro("12312412","Titulo1","autor1",30);
+		Libro libor2=new Libro("12312412","Titulo2","autor1",60);
+		Libro libor3=new Libro("12312412","Titulo3","autor1",80);
+		Libro libor4=new Libro("12312412","Titulo4","autor1",200);
+		
+		System.out.println(libor1.toString());
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package ejercicios1;
+
+public class Ejercicio17 {
+
+	public static void main(String[] args) {
+
+		int altura; int linea; int espacios;
+
+
+		for(altura=1;altura<=4;altura++) { 
+			for(espacios=1;espacios<4-1;espacios++) {
+				System.out.print(" ");
+			}
+				
+			for(linea=1;linea<=altura;linea++) {
+			System.out.print("*"); 	}
+		    	System.out.println(); }
+
+
+	}
+
+}

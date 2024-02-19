@@ -1,0 +1,34 @@
+package pruebascasa;
+
+
+public class mayordedosesteparacopiar {
+
+	public static int mayor(int x, int y) {
+		if (x>y)
+			return x;
+		else
+			return y;
+	}
+	/**
+	 * funcion numero aleatorio
+	 * @param N numero para meter
+	 * @return te dice un numero aleatorio
+	 */
+	public static int aleatorio(int N) {
+		return (int)(Math.random()*N+1);
+
+
+	}
+
+
+	public static void main(String[] args) {
+		int a=aleatorio(40); 
+		int b=aleatorio(150);
+		int c=aleatorio(70);
+		int d=aleatorio(80);
+		System.out.println(" Valores: "+a+ "  "+b+"  "+c+"  "+d);
+		System.out.println(" Mayor: "+mayor(mayor(a,b),mayor(c,d)));
+
+	}
+
+}

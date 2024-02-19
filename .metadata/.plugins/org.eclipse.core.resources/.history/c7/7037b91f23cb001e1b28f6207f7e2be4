@@ -1,0 +1,14 @@
+package Boletines;
+
+public class matriz1 {
+
+	public static void main(String[] args) {
+		
+		
+		matriz m=new matriz(0, 0);
+		
+		System.out.println(m.getMatriz());
+
+	}
+
+}

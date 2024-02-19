@@ -1,0 +1,61 @@
+package Cifrado;
+
+public class Mensaje {
+
+	// Atributo
+	
+	private String mensaje;    // Mensaje a cifrar
+
+	/**Contructor
+	 * @param mensaje
+	 */
+	public Mensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+
+	/** Devuelve el mensaje sin cifrar
+	 * @return el mensaje
+	 */
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	/** Establece un valor para el mensaje a cifrar
+	 * @param mensaje el mensaje a establecer
+	 */
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	/**
+	 * metodo para cifrar por sustitucion
+	 * ocupa 'clave' posiciones en adelante en el alfabeto
+	 * Cifra solo los caracteres del alfabeto : 'A'....'Z' y 'a'...'z'
+	 * Cualquier otro caracter se copiara sin cifrar(incuidos los espacios)
+	 * Considera el alfabeto circular, de forma que despues de la 'z' continuaria la 'a' y en mayusculas
+	 * @param clave a aplicar en el cifrado por sustitucion
+	 * @return el criptrograma al que se le ha aplicado el cifrado por sustitucion
+	 */
+	public String sustitucion(int clave) {
+
+		String criptograma="";
+		for (int i = 0; i < mensaje.length(); i++) {
+			if (mensaje.charAt(i)>='A' || mensaje.charAt(i)<='Z' || mensaje.charAt(i)>='a' || mensaje.charAt(i) <='z') {
+				criptograma=criptograma+(char)(mensaje.charAt(i)+clave);
+			}
+		}
+		
+		return criptograma;
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

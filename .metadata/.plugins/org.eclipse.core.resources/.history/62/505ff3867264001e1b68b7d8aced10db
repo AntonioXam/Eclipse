@@ -1,0 +1,15 @@
+
+public class calcuralasumadelosnumeros {
+
+	public static void main(String[] args) {
+		int num=1,suma=0;
+		while (num<=3) {
+			suma+=num;
+			num++;
+			
+			
+		}
+		System.out.println(suma);
+	}
+
+}

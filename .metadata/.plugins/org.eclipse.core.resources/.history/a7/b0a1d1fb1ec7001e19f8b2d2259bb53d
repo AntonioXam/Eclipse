@@ -1,0 +1,30 @@
+package Ejemplosmath;
+
+public class suma {
+
+	
+	public static int suma(int N) {
+		
+		if(N==0)
+			return 0;
+		else
+			return N+suma(N-1);
+	
+		
+	}
+	
+	public static int sumaDig(int N) {
+		
+		int u=N%10;
+		int d=N%100;
+	
+	
+		
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

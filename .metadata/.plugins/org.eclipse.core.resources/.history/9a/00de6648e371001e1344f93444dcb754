@@ -1,0 +1,33 @@
+package ejercicios1;
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+	
+	public static void main (String[] args) {
+		
+		try { // Pedimos por teclado los dos números
+			Scanner entrada = new Scanner(System.in);
+			System.out.println("Introduce la hora: ");
+			System.out.print("Hora: ");
+			int horas = entrada.nextInt();
+			System.out.print("Minutos: ");
+			int min = entrada.nextInt();
+			System.out.print("Segundos: ");
+			int seg = entrada.nextInt();
+			entrada.close();
+			if (horas >= 0 && horas <=23) {
+				if (min >= 0 && min <= 59) {
+					if (seg >= 0 && seg <= 59)
+						System.out.println("La hora "+horas+":"+min+":"+seg+" es correcta");
+					else
+						System.out.println("Los segundos introducidos no son correctos.");
+				} else
+					System.out.println("Los minutos introducidos no son correctos.");
+			} else
+				System.out.println("La hora introducida no es correcta.");
+		} catch (Exception e) {
+			System.out.println("ERROR. El valor introducido no es válido.");
+		}
+	}
+}

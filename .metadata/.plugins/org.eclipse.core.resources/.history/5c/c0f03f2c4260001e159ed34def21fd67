@@ -1,0 +1,14 @@
+package ejemplos;
+
+public class Math {
+
+	public static void main(String[] args) {
+		
+		double dado =java.lang.Math.random()*6+1;
+		
+		
+		System.out.println(dado);
+
+	}
+
+}

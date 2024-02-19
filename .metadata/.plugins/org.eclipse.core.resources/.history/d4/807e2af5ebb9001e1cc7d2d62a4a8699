@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class password {
+
+	public static void visual() {
+		
+		System.out.println("--------------------------------------------------------------------------");
+		System.out.println("|  Fortaleza de un passsword: ");
+		System.out.println("|  ---> Debil: si contienes menos de 8 caracteres");
+		System.out.println("|  ---> Moderada: si contiene, al menos 8 caracteres");
+		System.out.println("|  ---> Fuerte: si contiene como minimo 8 caracteres y ");
+		System.out.println("|               cumple con dos de las siguientes condiciones:");
+		System.out.println("|                   - 1 minuscula");
+		System.out.println("|                   - 1 mayuscula");
+		System.out.println("|                   - 1 numero ( del 0 al 9)");
+		System.out.println("|                   - 1 caracter especial");
+		System.out.println("|  ---> Excelente: si contiene como minimo 8 caracteres y ");
+		System.out.println("|                  cumple, al menos, con tres de las condiciones anteriores");
+		System.out.println("---------------------------------------------------------------------------");
+		
+	}
+	
+	
+	public static boolean esvocal(char c) {
+		if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A'|| c=='E'|| c=='I'|| c=='O'|| c=='U')
+			return true;
+		return false;
+
+	}
+	public static boolean especial(char c) {
+
+		if(esvocal(c))
+			return false;
+		if(c>='a' && c<='z')
+			return false;
+		if(c>='A' && c<='Z')
+			return false;
+		if(num(c))
+		return false;
+		
+		return true;
+
+	}
+	public static boolean esminus(char c) {
+		if(c>='a' && c<='z')
+			return true;
+		
+		return false;
+
+	}
+	
+public static boolean esmayus(char c) {
+		if(c>='A' && c<='Z')
+			return true;
+		return false;
+
+	}
+	public static boolean num(char c) {
+		
+		if(c>=0 && c<=9)
+		return true;
+		
+		return false;
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			
+			visual();
+			System.out.println();
+			System.out.print("\nIntroduce un password: ");
+			String contra=sc.nextLine().trim();
+			
+			for (int i = 0; i < contra.length(); i++) {
+				char c=contra.charAt(i);
+				
+				if (contra.length()<8) {
+					System.out.println(" Tu contraseña es debil");
+				}
+				
+			}
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,74 @@
+package Ejerciciocadena;
+
+public class Cadena {
+	
+	private String Cadena;
+
+	/**Contructores
+	 * 
+	 */
+	public Cadena() {
+	}
+
+	/** Contructor
+	 * @param cadena
+	 */
+	public Cadena(String cadena) {
+		Cadena = cadena;
+	}
+
+	/**
+	 * @return el cadena
+	 */
+	public String getCadena() {
+		return Cadena;
+	}
+
+	/**
+	 * @param cadena el cadena a establecer
+	 */
+	public void setCadena(String cadena) {
+		Cadena = cadena;
+	}
+	
+	public static int contarVocales(String cadena) {
+		int conta = 0;
+		char c;
+
+		for (int i = 0; i < cadena.length(); i++) {
+			c = cadena.charAt(i);
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+				conta++;
+			if(c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+				conta++;
+		}
+		return conta;
+	}
+
+	// Contar el número de consonantes
+	public static int contarConsonantes(String cadena) {
+		int conta = 0;
+		char c;
+		for (int i = 0; i < cadena.length(); i++) {
+			c = cadena.charAt(i);
+			if(c >= 'b' && c <= 'z') {
+				if(c!= 'e' && c!= 'i' && c!= 'o' && c!= 'u')
+					conta++;
+			}
+			if(c >= 'B' && c <= 'Z') {
+				if(c!= 'E' && c!= 'I' && c!= 'O' && c!= 'U')
+					conta++;
+			}
+		}
+		return conta;
+	}
+	
+
+
+		
+	}
+	
+	
+	
+
+

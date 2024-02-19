@@ -1,0 +1,41 @@
+package Boletines;
+
+import java.util.Scanner;
+
+
+
+public class CadenaTest1 {
+
+	public static void main(String[] args) {
+		Cadena C=new Cadena();
+		
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			 
+			System.out.print("Introduce un nombre: ");
+			C.setCadena(sc.nextLine());
+			
+			System.out.println("\nNombre: "+C.getCadena());
+			System.out.println("Nº Vocales: "+C.getVocales());
+			System.out.println("Nº Consonantes: "+C.getConsonantes());
+			
+			
+			System.out.print("\nEscribe un Caràcter (a-z|A-Z): ");
+			char car=sc.next().charAt(0);
+	
+		
+			
+		
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class ejemploif {
+
+	public static void main(String[] args) {
+	
+		        
+		        int numero = 5;
+
+		        // Usamos la estructura if para verificar si el número es positivo
+		        if (numero > 0) {
+		            System.out.println("El número es positivo.");
+		        } else {
+		            System.out.println("El número no es positivo.");
+		        }
+		    }
+		}
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package Boletines;
+
+import java.util.Scanner;
+
+import Ejerciciocadena.Cadena;
+
+public class CadenaTest1 {
+
+	public static void main(String[] args) {
+		Cadena C=new Cadena();
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			 
+			System.out.print("Introduce un nombre: ");
+			C.setCadena(sc.nextLine());
+			
+			System.out.println("\nNombre:"+C.getCadena());
+			System.out.println("Nº Vocales"+C.getVocales(null));
+			
+		
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+
+	}
+
+}

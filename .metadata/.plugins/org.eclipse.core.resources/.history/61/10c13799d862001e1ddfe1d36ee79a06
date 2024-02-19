@@ -1,0 +1,19 @@
+
+public class mayor {
+
+	public static void main(String[] args) {
+		int a=1, b=2, c=3;
+		if (a>b) {
+			if (a>c)
+				System.out.println(" a Es mayor: "+a);
+			else
+				System.out.println(" c Es mayor: "+c);
+		} else if (b>c) {
+			System.out.println(" El mayor se: "+b);
+		}else
+			System.out.println(" El mayor es "+c);
+
+	}
+}
+
+

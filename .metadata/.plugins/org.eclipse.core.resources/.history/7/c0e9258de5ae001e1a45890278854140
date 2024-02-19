@@ -1,0 +1,20 @@
+package introduccion;
+
+public class arraytest {
+
+	public static void main(String[] args) {
+		array a=new array(10);
+		
+		System.out.println("Longitud del array: "+a.getLongitud());
+		
+		for (int i = 1; i <a.getLongitud(); i++) 
+			a.setValor(i+1, i);
+		
+		
+		
+		System.out.print("Valores: ");
+		a.mostrarValores();
+		
+	}
+
+}

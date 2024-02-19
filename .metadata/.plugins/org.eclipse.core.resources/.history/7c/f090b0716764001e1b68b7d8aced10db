@@ -1,0 +1,27 @@
+
+public class buclersin {
+
+	
+	public static int aleatorio(int N) {
+        return (int)(Math.random()*N+1);
+    }
+
+    public static void main(String[] args) {
+
+        int a;
+        a=aleatorio(20);
+
+        while(a<=19) {
+            System.out.println(a);
+            a=aleatorio(20);
+        }
+
+
+
+
+
+
+    }
+}
+
+

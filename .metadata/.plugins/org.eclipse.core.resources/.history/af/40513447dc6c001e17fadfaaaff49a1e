@@ -1,0 +1,24 @@
+package ejercicios;
+
+import java.util.Scanner;
+
+public class contarhastatunumero {
+
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		
+		try {
+			int num=teclado.nextInt();
+			System.out.print("Introduce un número:");
+			
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("Error. Has introducido un número menor");
+		}
+		
+		teclado.close();
+	}
+
+}

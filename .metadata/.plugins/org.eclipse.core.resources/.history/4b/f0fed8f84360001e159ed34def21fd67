@@ -1,0 +1,16 @@
+package ejemplos;
+
+public class Reloj {
+
+	public static void main(String[] args) {
+		int t=5400;
+		
+		int m=3600/60;
+		double h=3600%60;
+		double s=3600&60/60;
+		
+		System.out.println("hora= "+h+"/n Minutos_= "+m+"/n Segundos= "+s);
+				
+	}
+
+}

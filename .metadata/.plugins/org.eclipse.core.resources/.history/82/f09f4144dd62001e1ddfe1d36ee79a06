@@ -1,0 +1,38 @@
+
+public class locuramaxima {
+
+	
+	public static void main(String[] args) {
+		// Definimos un número para el ejemplo
+        int numero = mayordedosesteparacopiar.aleatorio(30);
+        
+        
+        // Usamos la estructura if con 5 posibilidades
+        if (numero < 0) {
+            System.out.println("El número es negativo.");
+        } else if (numero == 0) {
+            System.out.println("El número es cero.");
+        } else if (numero > 0 && numero <= 10) {
+            System.out.println("El número es positivo y está en el rango de 1 a 10.");
+        } else if (numero > 10 && numero <= 20) {
+            System.out.println("El número es positivo y está en el rango de 11 a 20.");
+        } else {
+            System.out.println("El número es positivo y es mayor que 20.");
+        }
+
+        // Usamos la estructura else if con otras 5 posibilidades
+        if (numero % 2 == 0) {
+            System.out.println("El número es par.");
+        } else if (numero % 2 == 1) {
+            System.out.println("El número es impar.");
+        } else if (numero % 3 == 0) {
+            System.out.println("El número es divisible por 3.");
+        } else if (numero % 5 == 0) {
+            System.out.println("El número es divisible por 5.");
+        } else {
+            System.out.println("El número no cumple ninguna de las condiciones anteriores.");
+        }
+
+	}
+
+}

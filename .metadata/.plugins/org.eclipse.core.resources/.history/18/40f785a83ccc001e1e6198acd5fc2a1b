@@ -1,0 +1,12 @@
+package Ejerciciospropu;
+
+public class Passwordtest {
+
+	public static void main(String[] args) {
+		
+		Password p1=new Password();
+		System.out.println("Contraseña 1: "+p1.getContraseña());
+
+	}
+
+}

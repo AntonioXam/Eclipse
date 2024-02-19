@@ -1,0 +1,62 @@
+package Ejerciciocadena;
+
+public class Cadena {
+	
+	private String Cadena;
+
+	/**Contructores
+	 * 
+	 */
+	public Cadena() {
+	}
+
+	/** Contructor
+	 * @param cadena
+	 */
+	public Cadena(String cadena) {
+		Cadena = cadena;
+	}
+
+	/**
+	 * @return el cadena
+	 */
+	public String getCadena() {
+		return Cadena;
+	}
+
+	/**
+	 * @param cadena el cadena a establecer
+	 */
+	public void setCadena(String cadena) {
+		Cadena = cadena;
+	}
+	
+	
+	public int getLongitun() {
+		
+		return Cadena.length();
+		
+	}
+	
+	public void addCadena(String C) {
+		
+		Cadena=Cadena.concat(C);
+		
+	}
+	public String reverseCadena() {
+		
+		StringBuffer reves=new StringBuffer();
+		
+		reves.append(Cadena);
+		
+		reves.reverse();
+		
+		return reves.toString();
+	
+		
+	}
+	
+	
+	
+
+}

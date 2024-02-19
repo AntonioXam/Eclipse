@@ -1,0 +1,24 @@
+package ejemplos;
+
+import java.util.Scanner;
+
+public class Reloj {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario ingresar el tiempo en segundos
+        System.out.print("Ingresa el tiempo en segundos: ");
+        int t = scanner.nextInt();
+		
+		
+		
+		int h= t/3600;
+		int m= (t%3600)/60;
+		int s= t&60;
+		
+		System.out.println("hora= "+h+"/n Minutos_= "+m+"/n Segundos= "+s);
+				
+	}
+
+}

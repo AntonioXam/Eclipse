@@ -1,0 +1,37 @@
+package Cifrado;
+
+public class Mensaje {
+
+	// Atributo
+	
+	private String mensaje;    // Mensaje a cifrar
+
+	/**Contructor
+	 * @param mensaje
+	 */
+	public Mensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+
+	/** Devuelve el mensaje sin cifrar
+	 * @return el mensaje
+	 */
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	/** Establece un valor para el mensaje a cifrar
+	 * @param mensaje el mensaje a establecer
+	 */
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

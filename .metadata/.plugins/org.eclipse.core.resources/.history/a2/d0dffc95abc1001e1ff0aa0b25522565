@@ -1,0 +1,35 @@
+package Ejerciciocadena;
+
+import java.util.Scanner;
+
+public class Cadenatest {
+
+	public static void main(String[] args) {
+		
+		Cadena C=new Cadena();
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			 
+			System.out.print("Dime un cadena de caracteres: ");
+			C.setCadena(sc.nextLine());
+			
+			System.out.println(C.getCadena());
+			
+			System.out.print("Añade una palabra al final:");
+			C.addCadena(sc.nextLine());
+			System.out.println(C.addCadena());
+			System.out.println(C.reverseCadena());
+			
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+
+	}
+
+}

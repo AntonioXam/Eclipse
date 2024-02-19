@@ -1,0 +1,24 @@
+package Repaso;
+
+
+
+public class Enterotest3 {
+
+	public static void main(String[] args) {
+		
+		Entero num1= new Entero(4);
+		
+		int num2=(int) (Math.random()*10+1);
+		
+		if (num1.esMayor(num2)) {
+			System.out.println(num1.getNumero()+" es mayor que "+num2);
+		} else {
+			System.out.println(num1.getNumero()+" es menor que "+num2);
+		}
+	    
+		
+	     
+
+	}
+
+}

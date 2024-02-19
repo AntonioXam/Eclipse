@@ -1,0 +1,84 @@
+package Repaso;
+
+import java.util.Scanner;
+
+public class Rp1 {
+
+	final static int TAM=5;
+
+
+	/**
+	 * Funcion que compara dos arrays enteros son igual
+	 * @param arrayA array de valores enteros
+	 * @param arrayB array de valores enteros
+	 * @return TRUE si arrayA y arrayB son igual, es decir que contiene los mismos valores
+	 */
+	public static boolean compa(int[]arrayA, int[] arrayB) {
+		for (int i = 0; i < arrayB.length; i++) {
+			if (arrayA[i] != arrayB[i]) {
+				return false;
+				
+			}
+		}
+		return true;
+		
+	}
+	
+	public static void array(int array[]) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]+" ");
+			
+		}
+		
+	}
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		try {
+
+
+			int arrayA[]=new int[TAM];
+			int arrayB[]=new int[TAM];
+			
+			System.out.println("Introduce valores para ArrayA: ");
+			for (int i = 0; i < TAM; i++) {
+				System.out.print("Valor ["+(i+1)+"] : ");
+				arrayA[i]=sc.nextInt();
+			}
+			System.out.println("Introduce valores para ArrayB: ");
+			for (int i = 0; i < TAM; i++) {
+				System.out.print("Valor ["+(i+1)+"] : ");
+				arrayB[i]=sc.nextInt();
+			}
+			
+			System.out.println("\nArray A: ");
+			array(arrayA);
+			System.out.println("\nArray B: ");
+			array(arrayB);
+			
+			if (compa(arrayA, arrayB))
+				System.out.println("\n>>Los arrays son iguales.");
+				
+			else 
+				System.out.println("\n>>Los arrays son distintos.");
+			
+			
+			
+
+
+		
+			
+		}catch (Exception e) {
+			System.out.println("ERROR");
+		}
+
+
+
+		sc.close();
+	}
+}
+
+
+
+

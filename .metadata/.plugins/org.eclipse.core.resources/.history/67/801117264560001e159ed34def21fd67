@@ -1,0 +1,31 @@
+package ejemplos;
+
+import java.util.Scanner;
+
+public class ContadorMonedas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese la cantidad de monedas en diferentes denominaciones
+        System.out.print("Ingresa la cantidad de monedas de 10 cents: ");
+        int monedas10 = scanner.nextInt();
+
+        System.out.print("Ingresa la cantidad de monedas de 20 cents: ");
+        int monedas20 = scanner.nextInt();
+
+        System.out.print("Ingresa la cantidad de monedas de 50 cents: ");
+        int monedas50 = scanner.nextInt();
+
+        System.out.print("Ingresa la cantidad de monedas de 1€: ");
+        int monedas1Euro = scanner.nextInt();
+
+        // Calcular el valor total en euros
+        double totalEuros = (monedas10 * 0.10) + (monedas20 * 0.20) + (monedas50 * 0.50) + (monedas1Euro * 1.00);
+
+        // Mostrar el resultado
+        System.out.println("El valor total en euros es: " + totalEuros);
+
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}

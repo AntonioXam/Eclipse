@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class numeroaleatorio {
+
+	public static void main(String[] args) {
+		 try (// Generamos un número aleatorio entre -10 y 10
+		Scanner sc = new Scanner(System.in)) {
+			int numeroAleatorio = sc.nextInt(21) - 10;
+
+			System.out.println("Número aleatorio: " + numeroAleatorio);
+
+			// Usamos la estructura if para determinar si el número es positivo, negativo o cero
+			if (numeroAleatorio > 0) {
+			    System.out.println("El número es positivo.");
+			} else if (numeroAleatorio < 0) {
+			    System.out.println("El número es negativo.");
+			} else {
+			    System.out.println("El número es cero.");
+			}
+		}
+	}
+
+}

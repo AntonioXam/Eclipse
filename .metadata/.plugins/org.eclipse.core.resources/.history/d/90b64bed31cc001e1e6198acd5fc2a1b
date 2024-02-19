@@ -1,0 +1,87 @@
+package Ejerciciospropu;
+
+public class Libro {
+
+	//Atritbutos
+	
+	private int ISBN;
+	private String titulo;
+	private String autor;
+	private int paginas;
+	/**
+	 * @param iSBN
+	 * @param titulo
+	 * @param autor
+	 * @param paginas
+	 */
+	public Libro(int iSBN, String titulo, String autor, int paginas) {
+		ISBN = iSBN;
+		this.titulo = titulo;
+		this.autor = autor;
+		this.paginas = paginas;
+	}
+	/**
+	 * @return el iSBN
+	 */
+	public int getISBN() {
+		return ISBN;
+	}
+	/**
+	 * @param iSBN el iSBN a establecer
+	 */
+	public void setISBN(int iSBN) {
+		ISBN = iSBN;
+	}
+	/**
+	 * @return el titulo
+	 */
+	public String getTitulo() {
+		return titulo;
+	}
+	/**
+	 * @param titulo el titulo a establecer
+	 */
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	/**
+	 * @return el autor
+	 */
+	public String getAutor() {
+		return autor;
+	}
+	/**
+	 * @param autor el autor a establecer
+	 */
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	/**
+	 * @return el paginas
+	 */
+	public int getPaginas() {
+		return paginas;
+	}
+	/**
+	 * @param paginas el paginas a establecer
+	 */
+	public void setPaginas(int paginas) {
+		this.paginas = paginas;
+	}
+	@Override
+	public String toString() {
+		return "El Libro "+titulo+" con ISBN "+ISBN+" creado por el "+autor+" tiene "+paginas+" páginas";
+	}
+	
+	public void masPaginas() {
+		
+		if (paginas>this.paginas) {
+			
+			
+			
+			
+			
+		}
+	}
+	
+}
