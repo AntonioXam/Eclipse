@@ -400,7 +400,7 @@
       <tags>categoryTag:Ayuda</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_LzpYRbkNEe6zkJZok6AOXw" elementId="org.eclipse.ui.editorss" selectedElement="_LzpYRrkNEe6zkJZok6AOXw">
-      <children xsi:type="basic:PartStack" xmi:id="_LzpYRrkNEe6zkJZok6AOXw" elementId="PartStack@1f602930" selectedElement="_5kCqsMyiEe6djqLjE1n2zw">
+      <children xsi:type="basic:PartStack" xmi:id="_LzpYRrkNEe6zkJZok6AOXw" elementId="PartStack@1f602930" selectedElement="_3exx4M8UEe6s9_lfbCkGmg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -411,12 +411,10 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_5kCqsMyiEe6djqLjE1n2zw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Password.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Password.java&quot; partName=&quot;Password.java&quot; title=&quot;Password.java&quot; tooltip=&quot;Unidad_5/src/Ejerciciospropu/Password.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Unidad_5/src/Ejerciciospropu/Password.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;398&quot; selectionTopPixel=&quot;601&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Password.java&quot; partName=&quot;Password.java&quot; title=&quot;Password.java&quot; tooltip=&quot;Unidad_5/src/Ejerciciospropu/Password.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Unidad_5/src/Ejerciciospropu/Password.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;24&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_pEbywMykEe6djqLjE1n2zw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Mensajetest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Mensajetest.java&quot; partName=&quot;Mensajetest.java&quot; title=&quot;Mensajetest.java&quot; tooltip=&quot;Unidad_5/src/Cifrado/Mensajetest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Unidad_5/src/Cifrado/Mensajetest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;666&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -437,10 +435,12 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_3exx4M8UEe6s9_lfbCkGmg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Pruebacasa.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Pruebacasa.java&quot; partName=&quot;Pruebacasa.java&quot; title=&quot;Pruebacasa.java&quot; tooltip=&quot;Unidad_5/src/Cifrado/Pruebacasa.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Unidad_5/src/Cifrado/Pruebacasa.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;145&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Pruebacasa.java&quot; partName=&quot;Pruebacasa.java&quot; title=&quot;Pruebacasa.java&quot; tooltip=&quot;Unidad_5/src/Cifrado/Pruebacasa.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Unidad_5/src/Cifrado/Pruebacasa.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;211&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -700,7 +700,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZhbkNEe6zkJZok6AOXw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_w6zHgM8UEe6s9_lfbCkGmg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_LzrzZ7kNEe6zkJZok6AOXw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_J9aa8M8WEe699-7e72qsgA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_LzrzZ7kNEe6zkJZok6AOXw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZk7kNEe6zkJZok6AOXw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -708,8 +708,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZlbkNEe6zkJZok6AOXw" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_w61jwM8UEe6s9_lfbCkGmg" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Deshacer" enabled="false" command="_LzrOtbkNEe6zkJZok6AOXw"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_w61jwc8UEe6s9_lfbCkGmg" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Rehacer" enabled="false" command="_LzrPMbkNEe6zkJZok6AOXw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_J9cQIM8WEe699-7e72qsgA" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Deshacer" command="_LzrOtbkNEe6zkJZok6AOXw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_J9c3MM8WEe699-7e72qsgA" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Rehacer" enabled="false" command="_LzrPMbkNEe6zkJZok6AOXw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZmbkNEe6zkJZok6AOXw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -736,7 +736,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZ6bkNEe6zkJZok6AOXw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_w62K1M8UEe6s9_lfbCkGmg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Fijar editor" type="Check" command="_LzrQHbkNEe6zkJZok6AOXw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_J9eFUM8WEe699-7e72qsgA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Fijar editor" type="Check" command="_LzrQHbkNEe6zkJZok6AOXw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LzpZ9bkNEe6zkJZok6AOXw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
