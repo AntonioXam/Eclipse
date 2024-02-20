@@ -1,0 +1,34 @@
+package Cifrado;
+
+import java.util.Scanner;
+
+public class CriptografiaTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		try {
+
+
+		System.out.print("Escribe un mensaje a cifrar:");
+		String texto=sc.nextLine().trim();
+		
+		
+		System.out.println("Cifrado del César: ");
+		
+		
+		
+		
+		
+		
+
+
+
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+
+		sc.close();
+	
+	}
+
+}
