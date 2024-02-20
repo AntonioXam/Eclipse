@@ -1,0 +1,23 @@
+
+public class Ahorcado {
+
+	
+	public static String palabras() {
+		
+		String[] array={"MANDALORIANO","BABY YODA","SUSPENSO","VICTORVERDU","IMPRESORA","FILAMENTO","EXTRUSOR"};
+		
+		String palabraAleatoria=array[(int)(Math.random()*array.length)];
+		
+		return palabraAleatoria;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("---JUEGO DEL AHORCADO---\n\n");
+		
+		System.out.println(palabras());
+
+	}
+
+}
