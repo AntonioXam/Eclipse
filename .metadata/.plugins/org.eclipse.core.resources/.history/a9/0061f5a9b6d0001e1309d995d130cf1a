@@ -1,0 +1,52 @@
+package Ahorcado;
+
+public class AhorcadoPOO {
+	
+	//constantes
+	public final int TOTAL_INTENTOS=10;
+	
+	//Atributos
+	private String palabraAcertar;
+	private String palabraMostrar;
+	private int intentos;
+	private boolean acertada;
+	
+	
+	/** Contructores
+	 * @param palabraAcertar
+	 * @param palabraMostrar
+	 * @param intentos
+	 * @param acertada
+	 */
+	public AhorcadoPOO(String palabraAcertar, String palabraMostrar, int intentos, boolean acertada) {
+		this.palabraAcertar =generarPalabra();
+		this.palabraMostrar =generarPalabraMotrar();
+		this.intentos = 0;
+		this.acertada = false;
+	}
+	
+	
+	
+	
+	
+	
+	private String generarPalabra() {
+
+		String[] array={"MANDALORIANO","BABY YODA","SUSPENSO","VICTORVERDU","IMPRESORA","FILAMENTO","EXTRUSOR"};
+
+		String palabraAleatoria=array[(int)(Math.random()*array.length)];
+
+		return palabraAleatoria;
+
+	}
+	
+	private String generarPalabraMotrar() {
+		
+		for (int i = 0; i < generarPalabra().length(); i++) {
+			this.palabraMostrar+="*";
+		}
+		return palabraMostrar;
+	}
+	
+	
+}
