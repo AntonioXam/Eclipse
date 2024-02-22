@@ -26,8 +26,6 @@ public class Ahorcado {
 
 	}
 
-
-
 	public static void main(String[] args) {
 
 		final int TOTAL_INTENTOS=10;
@@ -67,20 +65,29 @@ public class Ahorcado {
 					System.out.println("¡OOHH la palabra introducida no es correcta.");
 			} else {
 				letra=cadena.charAt(0);
+				System.out.println("Letra introducida: "+letra);
 
+				if(palabraAle.indexOf(letra)==-1)
+					System.out.println("¡ OOOHHH La letra "+letra+" no se encuentra en la palabra a acertar");
+				else {
+					System.out.println("¡ACERTASTE! La letra "+letra+" se encuentra en la palabra a acertar");
+					for(int j=0; j<palabraAle.length();j++)
+						if(palabraAle.charAt(j)==letra)
+							palabraMotrar=palabraMotrar.substring(0,j)+letra+palabraMotrar.substring(j+1);
+					if(palabraAle.equals(palabraMotrar))
+						acertada=true;
+				}
 			}
-
-
+			intentos++;
 		}
-
-
-
-
-
-
-
 		sc.close();
 
+		if(acertada) {
+			System.out.println("\n¡CORRECTO! !Has acertado la palabra! ¡Enhorabuena!");
+			System.out.println("Acertaste la palabra en "+intentos+" intentos");
+		} else 
+			System.out.println("\n¡OHHH! Has agotado el número de intentos");
+		System.out.println("La palabra es: "+palabraAle);
 
 	}
 

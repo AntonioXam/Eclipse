@@ -1,0 +1,151 @@
+package Ahorcado;
+
+public class AhorcadoPOO {
+	
+	//constantes
+	public final int TOTAL_INTENTOS=10;
+	
+	//Atributos
+	private String palabraAcertar;		//Palabra a acertar
+	private String palabraMostrar;		//Palabra acercar convertida a asteriscos
+	private int intentos;				// contador de intentos	
+	private boolean acertada;			//TRUE si el usuario ha acertado la palabra, FALSE en otro caso
+	
+	
+	/** Contructores
+	 * @param palabraAcertar
+	 * @param palabraMostrar
+	 * @param intentos
+	 * @param acertada
+	 */
+	public AhorcadoPOO() {
+		this.palabraAcertar =generarPalabra();
+		this.palabraMostrar =generarPalabraMotrar();
+		this.intentos = 0;
+		this.acertada = false;
+	}
+	
+
+	
+	/**
+	 * Genera una palabra aleatoria dentro de un array de Strings
+	 * @return String
+	 */
+	private String generarPalabra() {
+
+		String[] array={"MANDALORIANO","BABY YODA","SUSPENSO","VICTORVERDU","IMPRESORA","FILAMENTO","EXTRUSOR"};
+
+		String palabraAleatoria=array[(int)(Math.random()*array.length)];
+
+		return palabraAleatoria;
+
+	}
+	
+	/**
+	 * La palabra generada de forma aleatoria se mostrará con asteriscos para poder adivinarla
+	 * @return String
+	 */
+	private String generarPalabraMotrar() {
+		String palabra="";
+		for (int i = 0; i < generarPalabra().length(); i++) {
+			palabra+="*";
+		}
+		return palabra;
+	}
+
+	/**
+	 * Intenta acertar una letra de la palabra a adivinar
+	 * @param letra para acertar
+	 * @return TRUE si esta la letra en la palabra o FALSE si no esta contenida
+	 */		 	
+	public boolean intentar(char letra) {
+		intentos++;
+		if(palabraAcertar.indexOf(letra)==-1) {
+			for (int j = 0; j < palabraAcertar.length();j++)
+				if(palabraAcertar.charAt(j)==letra)
+					palabraMostrar=palabraMostrar.substring(0,j)+letra+palabraMostrar.substring(j+1);
+			//Comprobamos la palabra acertada
+			if(palabraAcertar.equals(palabraMostrar))
+				acertada=true;
+			
+				return true;
+			
+		}
+		return false;
+	
+	}
+
+	/**
+	 * Intenta resolver la palabra
+	 * @param palabra para resolver
+	 * @return	TRUE si es la misma palabra o FALSE si no es la palabra a acertar
+	 */
+	public boolean resolver(String palabra) {
+		intentos++;
+		if(palabraAcertar.equals(palabra))
+			acertada=true;
+		return acertada;
+		
+	}
+
+	/**
+	 * Devuelve el numero de letras que tiene la palabra para acertar
+	 * @return
+	 */
+	public int getNumletrasPalabra() {
+		return palabraAcertar.length();
+		
+	}
+	
+
+	/**
+	 * @return el tOTAL_INTENTOS
+	 */
+	public int getNumerodeIntentos() {
+		
+		int Total=TOTAL_INTENTOS;
+		return Total-=intentos;
+		
+	}
+
+
+
+	/**
+	 * @return el palabraAcertar
+	 */
+	public String getPalabraAcertar() {
+		return palabraAcertar;
+	}
+
+
+
+	/**
+	 * @return el palabraMostrar
+	 */
+	public String getPalabraMostrar() {
+		return palabraMostrar;
+	}
+
+
+
+
+	/**
+	 * @return el intentos
+	 */
+	public int getIntentos() {
+		return intentos;
+	}
+
+
+
+
+	/**
+	 * @return el acertada
+	 */
+	public boolean isAcertada() {
+		return acertada;
+	}
+
+
+	
+}

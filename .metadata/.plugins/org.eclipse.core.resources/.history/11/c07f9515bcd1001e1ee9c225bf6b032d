@@ -1,0 +1,41 @@
+package Ahorcado;
+
+import java.util.Scanner;
+
+public class AhorcadoTest {
+
+	public static void main(String[] args) {
+		
+		AhorcadoPOO p=new AhorcadoPOO();
+		
+		Scanner sc = new Scanner(System.in);
+		try {
+			System.out.println("---JUEGO DEL AHORCADO---\n\n");
+			
+			System.out.println("Número de letras de la palabra: "+p.getNumletrasPalabra());
+		
+				
+			
+			System.out.println("Palabra a acertar: "+p.getPalabraMostrar());
+			System.out.println("Nº de intentos: "+p.getIntentos());
+			System.out.println("Nº de intentos restantes: "+p.getNumerodeIntentos());
+			System.out.print("Introduce una letra: ");
+			String cadena=sc.nextLine().toUpperCase();
+			char letra=cadena.charAt(0);
+			if(p.intentar(letra))
+				System.out.println("¡ACERTASTE! La letra "+letra+" se encuentra en la cadena.");
+			else
+				System.out.println("¡OOHH! La letra "+letra+" no se encuentra en la cadena.");
+			
+			
+		} catch (Exception e) {
+			System.out.println("ERROR!. Has introducido un valor no válido.");
+		}
+	   
+	     sc.close();
+	}
+
+
+	}
+
+
