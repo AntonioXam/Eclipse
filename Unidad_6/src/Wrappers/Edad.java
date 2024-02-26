@@ -35,7 +35,7 @@ public class Edad {
 				
 				int edad=ahoy-año;
 				if(dia<=dhoy && mes<=mhoy)
-					edad-=1;
+					edad+=1;
 				
 				System.out.println("Tienes "+edad+" años");
 				

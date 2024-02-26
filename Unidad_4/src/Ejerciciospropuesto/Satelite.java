@@ -35,12 +35,7 @@ public class Satelite {
 		return true;
 
 
-		public void variaPosicion(double variap, double variam) {
-			
-		}
-
 	}
-
 
 
 }

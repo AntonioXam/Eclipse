@@ -17,12 +17,12 @@ public class CadenaTest1 {
 			C.setCadena(sc.nextLine());
 
 			System.out.println("\nNombre: "+C.getCadena());
-			System.out.println("Nº Vocales: "+C.getVocales());
-			System.out.println("Nº Consonantes: "+C.getConsonantes());
+			System.out.println("Nº Vocales: "+C.contarVocales());
+			System.out.println("Nº Consonantes: "+C.contarConsonantes());
 
 			
 			System.out.print("\nEscribe un Caràcter (a-z|A-Z): ");
-	
+			
 
 		
 	
