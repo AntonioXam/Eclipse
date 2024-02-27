@@ -123,11 +123,14 @@ public class fecha {
 		dia=c.get(Calendar.DAY_OF_MONTH);
 		mes=c.get(Calendar.MONTH)+1;
 		anio=c.get(Calendar.YEAR);
-		
-		
 	
 	}
 	
+	public boolean esBisiesto() {
+		if(anio%4==0 && (anio%100 !=0 ||anio%400==0))
+			return true;
+		return false;
+	}
 	
 	
 }

@@ -1,20 +1,24 @@
-package ter;
+package PruebasCasa;
 
-public class T {
+import java.util.*;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Tiempo {
 	//Atributos
 	private int hora;
 	private int minutos;
 	private int segundos;
-	
+
 	//Constructores
-	
+
 	/**
 	 * 	Constructor.
 	 * @param hora
 	 * @param minutos
 	 * @param segundos
 	 */
-	public T(int hora, int minutos, int segundos) {
+	public Tiempo(int hora, int minutos, int segundos) {
 		this.hora = hora;
 		this.minutos = minutos;
 		this.segundos = segundos;
@@ -23,12 +27,12 @@ public class T {
 	/**
 	 * Constructor por defecto. 
 	 */
-	public T() {
+	public Tiempo() {
 		hora=0;
 		minutos=0;
 		segundos=0;
 	}
-	
+
 	//Guetters y Setters.
 
 	/**
@@ -78,7 +82,7 @@ public class T {
 	public void setSegundos(int segundos) {
 		this.segundos = segundos;
 	}
-	
+
 	//toString.
 	/**
 	 * Método que devuelve la hora.
@@ -86,7 +90,7 @@ public class T {
 	@Override
 	public String toString() {
 		String formato="";
-		
+
 		if (hora<10) {
 			formato+="0";
 		}
@@ -97,13 +101,13 @@ public class T {
 		formato+=minutos+":";
 		if (segundos<10) {
 			formato+="0";
-			
+
 		}
 		formato+=segundos;
-		
+
 		return formato;
 	}
-	
+
 	/**
 	 * Método que comprueba si la hora es correcta o no.
 	 * @return TRUE si la hora es correcta, FALSE en caso contrario.
@@ -118,12 +122,23 @@ public class T {
 		}
 		return false;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
+	/**
+	 * Metodo que muestra la hora actual
+	 */
+	public void horaActual() {
+		Date f=new Date();
+		GregorianCalendar c=new GregorianCalendar();
+		c.setTime(f);
+		hora=c.get(Calendar.HOUR_OF_DAY);
+		minutos=c.get(Calendar.MINUTE);
+		segundos=c.get(Calendar.SECOND);
+	}
+
+
+
+
+
+
+
 }

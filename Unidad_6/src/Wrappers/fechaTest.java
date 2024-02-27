@@ -25,7 +25,7 @@ public class fechaTest {
 		}catch (Exception e) {
 			System.err.println(" ERROR no has introducido un valor correcto");
 			fintro=new fecha();
-			System.out.println("Tomaremos la fecha: "+fintro.toString());
+			System.out.println("\nTomaremos la fecha: "+fintro.toString());
 		}	
 
 		sc.close();
@@ -34,33 +34,37 @@ public class fechaTest {
 
 		actual.setFechaActual();
 
-		System.out.println("Fecha actual: "+actual);
+		System.out.println("\nFecha actual: "+actual);
 
 
-		if(!fintro.fechaOK())
-			System.out.println("La fecha es incorreta");
-		else
-			System.out.println("Fecha introducida: "+fintro);
+		if(!fintro.fechaOK()) {
+			System.out.println("\nLa fecha es incorreta");
+		}else {
+			System.out.println("\nFecha introducida: "+fintro);
+		}
 
-		if(fintro.fechaOK())
+		if(fintro.fechaOK()) {
 			if(fintro.getAnio()<actual.getAnio())
 				System.out.println("La fecha introducida pertenece al pasado");
-			else if(fintro.getAnio()==actual.getAnio()) {
-				if(fintro.getMes()<actual.getMes())
-					System.out.println("La fecha introducida pertenece al pasado");
-				else if(fintro.getMes()==actual.getMes()) {
-					if(fintro.getDia()<actual.getDia())
-						System.out.println("La fecha introducida pertenece al pasado");
-					else if(fintro.getDia()==actual.getDia()) 
-						System.out.println("La fecha es misma");
-					else 
-						System.out.println("Fecha es posterior");
-					
-				} else
-					System.out.println("Fecha es posterior");
-			} else
-				System.out.println("Fecha es posterior");
+			else if(fintro.getAnio()>actual.getAnio()) 
+				System.out.println("La fecha introducida pertenece al futuro");
+			else if(fintro.getMes()<actual.getMes())
+				System.out.println("La fecha introducida pertenece al pasado");
+			else if(fintro.getMes()>actual.getMes())
+				System.out.println("La fecha introducida pertenece al futuro");
+			else if(fintro.getDia()<actual.getDia())
+				System.out.println("La fecha introducida pertenece al pasado");
+			else if(fintro.getDia()>actual.getDia())
+				System.out.println("La fecha introducida pertenece al futuro");
+			else
+				System.out.println("La fecha es la misma que hoy");
 
+		}
+		
+		if(fintro.esBisiesto())
+			System.out.println("Es bisiesto");
+		else
+			System.out.println("No es bisiesto");
 
 	}
 
