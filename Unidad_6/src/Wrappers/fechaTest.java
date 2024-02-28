@@ -8,9 +8,9 @@ public class fechaTest {
 
 		Scanner sc = new Scanner(System.in);
 
-		fecha fintro;
+		Fecha fintro;
 
-		;
+		
 		try {
 			System.out.println("Introduce una fecha ");
 			System.out.print("Dia: ");
@@ -20,17 +20,17 @@ public class fechaTest {
 			System.out.print("Año: ");
 			int anio=sc.nextInt();
 
-			fintro=new fecha(dia,mes,anio);
+			fintro=new Fecha(dia,mes,anio);
 
 		}catch (Exception e) {
 			System.err.println(" ERROR no has introducido un valor correcto");
-			fintro=new fecha();
+			fintro=new Fecha();
 			System.out.println("\nTomaremos la fecha: "+fintro.toString());
 		}	
 
 		sc.close();
 
-		fecha actual=new fecha();
+		Fecha actual=new Fecha();
 
 		actual.setFechaActual();
 
@@ -65,6 +65,11 @@ public class fechaTest {
 			System.out.println("Es bisiesto");
 		else
 			System.out.println("No es bisiesto");
+		
+		System.out.println("Dias del mes de la fecha introducida: "+fintro.contarDias());
+		
+		fintro.incrementarDia();
+		System.out.println("Dia siguiente a la fecha introducida: "+fintro);
 
 	}
 

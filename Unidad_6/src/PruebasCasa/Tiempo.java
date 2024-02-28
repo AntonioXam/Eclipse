@@ -135,7 +135,33 @@ public class Tiempo {
 		segundos=c.get(Calendar.SECOND);
 	}
 
+	   // Método para incrementar un segundo
+    public void siguienteSegundo() {
+        segundos++;
+        if (segundos >= 60) {
+            segundos = 0;
+            siguienteMinuto(); // Incrementa el minuto si los segundos alcanzan 60
+        }
+    }
 
+    // Método para incrementar un minuto
+    public void siguienteMinuto() {
+        minutos++;
+        if (minutos >= 60) {
+            minutos = 0;
+            siguienteHora(); // Incrementa la hora si los minutos alcanzan 60
+        }
+    }
+
+    // Método para incrementar una hora
+    public void siguienteHora() {
+        hora++;
+        if (hora >= 24) {
+            hora = 0; // Reinicia a 0 si las horas alcanzan 24
+        }
+    }
+
+	
 
 
 

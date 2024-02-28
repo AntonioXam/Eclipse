@@ -2,10 +2,13 @@ package PruebasCasa;
 
 import java.util.Scanner;
 
-public class Ttest {
+public class Tiempotest {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		
+		Tiempo time;
+		try {
 		System.out.println("Introduce una hora ");
 		System.out.print("Hora: ");
 		int h=sc.nextInt();
@@ -13,9 +16,16 @@ public class Ttest {
 		int m=sc.nextInt();
 		System.out.print("Segundos: ");
 		int s=sc.nextInt();
-		sc.close();
 		
-		Tiempo time=new Tiempo(h,m,s);
+		
+		 time=new Tiempo(h,m,s);
+		
+		}catch (Exception e) {
+			System.err.println("ERROR has introducido un valor incorreco");
+			time=new Tiempo();
+			System.out.println("Tomaremos la hora: "+time);
+		}
+		sc.close();
 		
 		if (time.horaOK()) { 
 			System.out.println("\nHora introducida: "+time.toString());
@@ -37,6 +47,14 @@ public class Ttest {
 			 System.out.println("La hora es despues de la actual");
 		 else
 			 System.out.println("Las horas son iguales");
+		 
+		 time.siguienteSegundo();
+		 System.out.println("\nSiguiente segundo de la hora introducida: "+time);
+		 time.siguienteMinuto();
+		 System.out.println("\nSiguiente minuto de la hora introducida: "+time);
+		 time.siguienteHora();
+		 System.out.println("\nSiguiente hora de la hora introducida: "+time);
+		 
 	}
-
+	
 }
