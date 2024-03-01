@@ -23,5 +23,10 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="polimorfismo.Persona"/>
+    <fullyQualifiedTypeName name="polimorfismo.Empleado"/>
+    <fullyQualifiedTypeName name="polimorfismo.padre"/>
+    <fullyQualifiedTypeName name="padres.padre"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="PooHerencia.Doctorado"/>
 </qualifiedTypeNameHistroy>
