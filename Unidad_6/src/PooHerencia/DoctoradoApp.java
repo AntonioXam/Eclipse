@@ -10,18 +10,19 @@ public class DoctoradoApp {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Nombre del alumno: ");
 		String nombre=sc.nextLine();
-		System.out.print("\nHoras lectivas: ");
-		int horas=sc.nextInt();
-		System.out.print("\nCurso: ");
+		System.out.print("Horas lectivas: ");
+		int horas=Integer.parseInt(sc.nextLine());
+		System.out.print("Curso: ");
 		String curso=sc.nextLine();
-		System.out.print("\nHoras de dedicación a la tesis: ");
-		int horasT=sc.nextInt();
-		System.out.print("\nNombre de la tesis: ");
+		System.out.print("Horas de dedicación a la tesis: ");
+		int horasT=Integer.parseInt(sc.nextLine());
+		System.out.print("Nombre de la tesis: ");
 		String tesis=sc.nextLine();
 		
 		Doctorado doc=new Doctorado(nombre, horas, curso, horasT, tesis);
 		
-		System.out.println("\nLos datos intro");
+		System.out.println("\nLos datos introducidos son:");
+		System.out.println(doc);
 		
 		
 		
