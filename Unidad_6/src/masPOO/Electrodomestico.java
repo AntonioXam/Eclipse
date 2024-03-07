@@ -142,16 +142,16 @@ public class Electrodomestico {
 		else if(peso>=80)
 			precio+=100;
 	
-		return PRECIO_BASE+precio;
+		return preciobase+precio;
 			
 	}
 
 
 	@Override
 	public String toString() {
-		return "Electrodomestico: "
-				+"color "+color+ ", peso="+peso+ "kg, consumo energético ="+consumoEnergetico
-				+", precio final="+precioFinal();
+		return "\nElectrodomestico: "
+				+"color "+color+ ", peso="+peso+ "kg, consumo energético= "+consumoEnergetico
+				+", precio final= "+precioFinal()+"€";
 				
 	}
 	
