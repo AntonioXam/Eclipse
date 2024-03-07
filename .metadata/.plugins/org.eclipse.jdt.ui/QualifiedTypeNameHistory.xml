@@ -34,4 +34,7 @@
     <fullyQualifiedTypeName name="masPOO.Television"/>
     <fullyQualifiedTypeName name="Entregar.Entregable"/>
     <fullyQualifiedTypeName name="Entregar.Videojuego"/>
+    <fullyQualifiedTypeName name="empleadosClase.Empleado"/>
+    <fullyQualifiedTypeName name="empleadosClase.Comercial"/>
+    <fullyQualifiedTypeName name="empleadosClase.Repartidor"/>
 </qualifiedTypeNameHistroy>

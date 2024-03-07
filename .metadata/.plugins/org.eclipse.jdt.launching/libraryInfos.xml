@@ -19,6 +19,7 @@
             <entry path="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
+    <libraryInfo home="C:\Program Files\Eclipse 4.30.0.20240201\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre" version="17.0.9"/>
     <libraryInfo home="C:\Program Files\Eclipse Adoptium\jre-8.0.382.5-hotspot" version="1.8.0_382">
         <bootpath>
             <entry path="C:\Program Files\Eclipse Adoptium\jre-8.0.382.5-hotspot\lib\resources.jar"/>
@@ -40,12 +41,9 @@
     </libraryInfo>
     <libraryInfo home="C:\Users\Antonio.J I\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre" version="17.0.8.1"/>
     <libraryInfo home="C:\Users\AntonioI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre" version="17.0.8.1"/>
-    <libraryInfo home="C:\Program Files\Eclipse 4.29.0\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre" version="17.0.8.1"/>
-    <libraryInfo home="C:\Users\Antonio.J I\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047" version="17.0.8.1"/>
+    <libraryInfo home="C:\Program Files\Eclipse 4.30.0.20240201\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858" version="17.0.9"/>
     <libraryInfo home="C:\Program Files\Eclipse 4.29.0\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047" version="17.0.8.1"/>
     <libraryInfo home="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre" version="17.0.9"/>
-    <libraryInfo home="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858" version="17.0.9"/>
-    <libraryInfo home="C:\Users\AntonioI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047" version="17.0.8.1"/>
     <libraryInfo home="C:\Program Files\Eclipse Adoptium\jre-8.0.392.8-hotspot" version="1.8.0_392">
         <bootpath>
             <entry path="C:\Program Files\Eclipse Adoptium\jre-8.0.392.8-hotspot\lib\resources.jar"/>
@@ -65,4 +63,9 @@
             <entry path="C:\Program Files\Eclipse Adoptium\jre-8.0.392.8-hotspot\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
+    <libraryInfo home="C:\Program Files\Amazon Corretto\jdk21.0.2_13" version="21.0.2"/>
+    <libraryInfo home="C:\Program Files\Eclipse 4.29.0\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre" version="17.0.8.1"/>
+    <libraryInfo home="C:\Users\Antonio.J I\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047" version="17.0.8.1"/>
+    <libraryInfo home="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858" version="17.0.9"/>
+    <libraryInfo home="C:\Users\AntonioI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047" version="17.0.8.1"/>
 </libraryInfos>
