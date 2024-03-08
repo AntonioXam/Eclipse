@@ -8,15 +8,8 @@ public class Comercial extends Empleado {
 	
 	
 	
-	
-	public Comercial() {
-		super();
-		this.comision=0;
-	}
 
-	
-
-	/**
+	/**Constructor con 4 parametros
 	 * @param nombre
 	 * @param edad
 	 * @param salario
@@ -28,14 +21,14 @@ public class Comercial extends Empleado {
 
 	
 
-	/**
+	/**Devuelve la comision
 	 * @return el comision
 	 */
 	public double getComision() {
 		return comision;
 	}
 
-	/**
+	/**Establece la comision
 	 * @param comision el comision a establecer
 	 */
 	public void setComision(double comision) {
@@ -43,11 +36,13 @@ public class Comercial extends Empleado {
 	}
 
 
-
+	/**
+	 * Metodo que devuelve TRUE si se cumple la condicion o FALSE si no la cumple
+	 */
 	public boolean plus() {
 		
-		if(edad>30 && comision>200) {
-			salario=salario+PLUS;
+		if(getEdad()>30 && comision>200) {
+			setSalario(getSalario()+PLUS);
 		return true;
 		}
 	
@@ -57,12 +52,15 @@ public class Comercial extends Empleado {
 	}
 
 
-
+	/**
+	 * Metodo toString de comercial
+	 */
+	
 	@Override
 	public String toString() {
-		if(nombre.equals(""))
+		if(getNombre().equals(""))
 			return "\nNo se ha registrado al empleado";
-		return "\nComercial: " +nombre+", edad= " + edad + ",comision= "+comision+", salario= " + salario + "€";
+		return "\nComercial: "+super.toString()  + ", comision= "+comision;
 	}
 	
 	

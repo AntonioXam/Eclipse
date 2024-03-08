@@ -7,16 +7,9 @@ public class Repartidor extends Empleado {
 	private String zona;
 
 	
-	/**
-	 * 
-	 */
-	public Repartidor() {
-		super();
-		this.zona="";
-		
-	}
 
-	/**
+
+	/** Constructor con 4 parametros
 	 * @param nombre
 	 * @param edad
 	 * @param salario
@@ -42,8 +35,8 @@ public class Repartidor extends Empleado {
 
 	public boolean plus() {
 		
-		if(edad>25 && zona.equals("zona 3")) {
-			salario=salario+PLUS;
+		if(getEdad()>25 && zona.equalsIgnoreCase("zona 3")) {
+			setSalario(getSalario()+PLUS);
 		return true;
 		}
 	
@@ -53,9 +46,9 @@ public class Repartidor extends Empleado {
 
 	@Override
 	public String toString() {
-		if(nombre.equals(""))
+		if(getNombre().equals(""))
 			return "\nNo se ha registrado al empleado";
-		return "\nRepartidor: " +nombre+", edad= " + edad + ", zona: "+zona+", salario= " + salario + "€";
+		return "\nRepartidor: "+super.toString()+ ", zona: "+zona;
 	}
 
 	

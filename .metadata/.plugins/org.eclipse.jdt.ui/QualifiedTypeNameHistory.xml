@@ -37,4 +37,5 @@
     <fullyQualifiedTypeName name="empleadosClase.Empleado"/>
     <fullyQualifiedTypeName name="empleadosClase.Comercial"/>
     <fullyQualifiedTypeName name="empleadosClase.Repartidor"/>
+    <fullyQualifiedTypeName name="agendaClase.Contacto"/>
 </qualifiedTypeNameHistroy>
