@@ -81,6 +81,8 @@ public class Cadena {
 		System.out.println(sinespacios);
 		
 	}
+	
+	
 
 		
 	}

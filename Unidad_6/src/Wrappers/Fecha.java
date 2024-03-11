@@ -97,7 +97,7 @@ public class Fecha {
 		int diasmes=31;
 		if(anio==0)
 			return false;
-		if(mes<1 || mes<12) 
+		if(mes<1 || mes>12) 
 			return false;
 		
 		if(mes==4 || mes==6 || mes==9 || mes==11 )

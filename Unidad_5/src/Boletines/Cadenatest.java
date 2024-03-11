@@ -16,9 +16,9 @@ public class Cadenatest {
 			
 			System.out.println("Nombre: "+C.getCadena());
 			System.out.println("Nº Vocales: "+C.contarVocales());
-			System.out.println("Nº Consonantes"+C.contarConsonantes());
+			System.out.println("Nº Consonantes: "+C.contarConsonantes());
 			
-			System.out.println("Dime una letra: ");
+			System.out.print("Dime una letra: ");
 			char letra=sc.next().charAt(0);
 			
 			if (C.isCaracter(letra)) {
@@ -27,7 +27,7 @@ public class Cadenatest {
 				System.out.println("No contiene la letra");
 			}
 			
-			System.out.println("Sin espacios: ");
+			System.out.print("Sin espacios: ");
 			C.deleteBlancos();
 			
 			

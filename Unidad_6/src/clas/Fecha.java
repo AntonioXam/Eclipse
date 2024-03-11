@@ -1,4 +1,4 @@
-package boletin;
+package clas;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -101,7 +101,7 @@ public class Fecha {
 			mes+="Enero";
 			break;
 		case 2: 
-			mes+= "Febreo";
+			mes+= "Febrero";
 			break;
 		case 3: 
 			mes+= "Marzo";
@@ -161,7 +161,7 @@ public class Fecha {
 		int diasmes=31;
 		if(year==0)
 			return false;
-		if(month<1 || month<12) 
+		if(month<1 || month>12) 
 			return false;
 		
 		if(month==4 || month==6 || month==9 || month==11 )

@@ -1,4 +1,4 @@
-package boletin;
+package clas;
 
 import java.util.Scanner;
 
@@ -31,19 +31,19 @@ public class FechaTest {
 		 System.out.println("\nFecha de nacimiento: "+intro);
 		
 		 
-		if(intro.isValid()) {
+		if(!intro.isValid()) {
 			
 			System.out.println("La fecha introducida no corresponde a una fecha correcta");
 			
 		}
-		if(!intro.isValid())
+		if(intro.isValid()) {
 
           if(edad>=18)
         	  System.out.println("La persona nacida el "+intro.getDay()+" de "+intro.getMonth()+" de "+intro.getYear()+" es MAYOR DE EDAD");
           else
         	  System.out.println("La persona nacida el "+intro.getDay()+" de "+intro.getMonth()+" de "+intro.getYear()+" es MENOR DE EDAD");
 		
-		
+		}
 		
 		
 		
