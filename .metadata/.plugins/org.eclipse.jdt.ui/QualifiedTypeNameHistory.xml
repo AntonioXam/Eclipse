@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="RectanguloEquals.Rectangulo"/>
     <fullyQualifiedTypeName name="Interfaz.Figura"/>
     <fullyQualifiedTypeName name="Ahorcado.AhorcadoPOO"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="polimorfismo.Persona"/>
     <fullyQualifiedTypeName name="polimorfismo.Empleado"/>
@@ -32,12 +31,7 @@
     <fullyQualifiedTypeName name="empleadosClase.Comercial"/>
     <fullyQualifiedTypeName name="empleadosClase.Repartidor"/>
     <fullyQualifiedTypeName name="agendaClase.Contacto"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="hour.hourTest"/>
-    <fullyQualifiedTypeName name="hour.horas"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="Ejercicios.Forma"/>
     <fullyQualifiedTypeName name="Ejercicios.Circulo"/>
@@ -46,4 +40,14 @@
     <fullyQualifiedTypeName name="clazes.Lavadora"/>
     <fullyQualifiedTypeName name="clazes.Television"/>
     <fullyQualifiedTypeName name="clazes.Electrodomestico"/>
+    <fullyQualifiedTypeName name="hour.horas"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Examen.Time"/>
+    <fullyQualifiedTypeName name="Examen.Empleado"/>
+    <fullyQualifiedTypeName name="Examen.Camarero"/>
+    <fullyQualifiedTypeName name="Examen.Cocinero"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
 </qualifiedTypeNameHistroy>
