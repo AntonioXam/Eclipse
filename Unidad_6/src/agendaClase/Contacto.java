@@ -3,10 +3,13 @@ package agendaClase;
 public class Contacto {
 
 	//Atributos
-	protected String nombre;
-	protected int telefono;
+	private String nombre;
+	private int telefono;
 	
 	
+	/**
+	 * Constructor por defecto
+	 */
 	public Contacto() {
 		this.nombre="";
 		this.telefono=0;
@@ -23,14 +26,15 @@ public class Contacto {
 
 
 
-	/**Devuelve el nombre del contacto
-	 * @return el nombre
+
+	/**Constructor con 1 parametro y otro por defecto
+	 * @param nombre
 	 */
-	public String getNombre() {
-		return nombre;
+	public Contacto(String nombre) {
+		super();
+		this.nombre = nombre;
+		this.telefono=0;
 	}
-
-
 
 	/**Establece el nombre del contacto
 	 * @param nombre el nombre a establecer
@@ -50,6 +54,13 @@ public class Contacto {
 
 
 
+	/**Devuelve el nombre del contacto
+	 * @return el nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
 	/**Establece el numero de telefono del contacto
 	 * @param telefono el telefono a establecer
 	 */
@@ -61,24 +72,23 @@ public class Contacto {
 	/**
 	 * Metodo que compruena si un contacto es igual a otro 
 	 * @param palabra
-	 * @return TRUE si son iguales o FALSE si no lo son
+	 * @return TRUE si los nombres de los contactos son iguales o FALSE si no lo son
 	 */
-	public boolean nombreIgual(String palabra) {
+	public boolean nombreIgual(Contacto c) {
 		
-		if(nombre.equals(palabra))
-			return true;
-		
-		return false;
+		 return this.nombre.trim().equalsIgnoreCase(c.getNombre().trim());
+			
 		
 	}
 
 
 	/**
-	 * Metodo toString del contacto
+	 * Metodo toString del contacto que muestra informacion del contacto
+	 * @return cadena con toda la informacion del contacto
 	 */
 	@Override
 	public String toString() {
-		return "Contacto : nombre= " + nombre + ", telefono= " + telefono;
+		return nombre + " - " + telefono;
 	}
 	
 	
