@@ -31,9 +31,10 @@ public class Agenda   {
 	public boolean existeContacto(Contacto c) {
 
 		for (int i = 0; i < contactos.length; i++) {
-			if(contactos[i].nombreIgual(c))
-				return true;
-
+			if( contactos[i]!=null) {
+				if(contactos[i].nombreIgual(c))
+					return true;
+			}
 		}
 
 		return false;
@@ -56,19 +57,19 @@ public class Agenda   {
 	public void addContacto(Contacto c) {
 
 		if(agendaLlena())
-			System.out.println("La agenda está llena");
+			System.err.println(">> La agenda está llena");
 		else if(existeContacto(c))
-			System.out.println("El contacto ya existe");
+			System.out.println(">> El contacto ya existe");
 		else {
 			boolean encontrado=false;
 			for (int i = 0; i < contactos.length && !encontrado; i++) {
-				if(contactos[i]==null)
+				if(contactos[i]==null) {
 					contactos[i]=c;
-				encontrado=true;
-
+					encontrado=true;
+				}
 			}
 			if(encontrado)
-				System.out.println("Se ha añadido el nuevo contacto en la agenda");
+				System.out.println(">> Se ha añadido el nuevo contacto en la agenda");
 		}
 	}
 
@@ -85,20 +86,46 @@ public class Agenda   {
 
 	public void listarContactos() {
 		if(huecosLibres()==contactos.length)
-			System.out.println("\nLa agenda está vacia");
+			System.out.println("\n>> La agenda está vacia");
 		else {
-			boolean encontrado=false;
-		for (int i = 0; i < contactos.length && !encontrado; i++) {
-			if(contactos[i]==null)
-			System.out.println(contactos[i].toString());
-			encontrado=true;
-			
-		}
+			for (int i = 0; i < contactos.length; i++) {
+				if(contactos[i]!=null)
+					System.out.println(contactos[i]);
+
+
+			}
 		}
 	}
 
 
+	public void buscarContacto(String nombre) {
+		boolean encontrado=false;
+		for (int i = 0; i < contactos.length && !encontrado; i++) {
+			if( contactos[i]!=null && nombre.trim().equalsIgnoreCase(contactos[i].getNombre().trim())) {
+				System.out.println(">> Su teléfono es: "+contactos[i].getTelefono());
+				encontrado=true;
+			}
+		}
+		if(!encontrado)
+			System.out.println(">> Contacto no existe");
 
+	}
 
+	public void eliminarContacto(Contacto c) {
+		boolean encontrado=false;
+		for (int i = 0; i < contactos.length && !encontrado; i++) {
+			if( contactos[i]!=null) {
+				if(contactos[i].nombreIgual(c))
+					contactos[i]=null; //Ponemos el contacto a null
+					encontrado=true;
+			}
+		}
+		
+		if(encontrado)
+			System.out.println("Contacto eliminado");
+		else
+			System.out.println("No se ha podido eliminar");
+	}
 
 }
+
