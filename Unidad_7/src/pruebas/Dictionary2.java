@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Dictionary {
+public class Dictionary2 {
 
 	public static void main(String[] args) {
 
@@ -22,10 +22,11 @@ public class Dictionary {
 			Scanner s=new Scanner(f);
 			while (s.hasNextLine() && !encontrado) {
 				String linea = s.nextLine();
-				String palabra=linea.substring(0, linea.indexOf('='));
-				if (buscar.compareToIgnoreCase(palabra)==0) { 
 				String traduccion=linea.substring(linea.indexOf('=')+1);
-					System.out.println("La traducción: "+traduccion);
+				if (buscar.compareToIgnoreCase(traduccion)==0) { 
+				String palabra=linea.substring(0, linea.indexOf('='));
+				
+					System.out.println("La traducción en inglés: "+palabra);
 				encontrado=true;
 				}
 			}

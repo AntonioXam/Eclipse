@@ -1,10 +1,8 @@
-package agendaClase;
+package agendaClaseconGuardad;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
-import agendaClase.Contacto;
 
 public class Agenda   {
 
@@ -133,7 +131,21 @@ public class Agenda   {
 			System.out.println("No se ha podido eliminar");
 	}
 	
-	
+	public void guardarContactos() {
+		FileWriter fw= null;
+		PrintWriter pw=null;
+		try {
+			fw= new FileWriter("C:/ProgramacionTXT/agenda.txt");
+			
+			for (int i = 0; i < contactos.length; i++) {
+				pw.println(contactos[i].toString());
+			}
+		} catch (IOException e) {
+			// TODO Bloque catch generado automáticamente
+			e.printStackTrace();
+		}
+		
+	}
 
 }
 
