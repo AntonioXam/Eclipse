@@ -1,0 +1,42 @@
+package pruebas;
+
+import java.io.FileReader;
+
+public class ejercicioMayusaminusyalreves {
+
+	public static void main(String[] args) {
+
+		FileReader fr = null;
+
+		try {
+
+			// Apertura del fichero y creacion de los bufferReeader
+			fr = new FileReader("C:\\ProgramacionTXT\\100tifiko.txt");
+
+			// Leemos caracter a caracter
+			int valor= fr.read();
+			while(valor != -1) {
+				
+				if(valor >= 'A' && valor <= 'Z')
+					valor += 32;
+				else if(valor >= 'a' && valor <= 'z')
+					valor -= 32;
+				System.out.print((char)valor);
+				
+				valor = fr.read();
+			}
+
+		} catch (Exception e1) {
+			System.out.println("Se ha producido un error con el archivo especificado");
+		} finally {
+			try {
+				if(fr != null)
+					fr.close();
+			} catch (Exception e2) {
+				System.out.println("Error en el cierre del archivo");
+			}
+		}
+
+	}
+
+}
