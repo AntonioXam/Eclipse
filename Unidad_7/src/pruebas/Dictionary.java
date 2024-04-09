@@ -32,7 +32,7 @@ public class Dictionary {
 			s.close();
 			
 			if (!encontrado) {
-				System.out.println("No se ha encontrado");
+				System.out.println("No se ha encontrado en dictionary");
 			}
 
 		} catch (FileNotFoundException e) {

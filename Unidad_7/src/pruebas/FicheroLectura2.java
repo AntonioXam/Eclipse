@@ -14,7 +14,7 @@ public class FicheroLectura2 {
 			Scanner sc = new Scanner(f);
 			while(sc.hasNextLine()) {
 				String linea = sc.nextLine();
-				System.out.println(linea);
+				System.out.println(linea.toUpperCase());
 			}
 			
 			
