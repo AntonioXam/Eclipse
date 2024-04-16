@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.lang.CloneNotSupportedException"/>
-    <fullyQualifiedTypeName name="java.io.Closeable"/>
-    <fullyQualifiedTypeName name="RectanguloEquals.Rectangulo"/>
-    <fullyQualifiedTypeName name="Interfaz.Figura"/>
-    <fullyQualifiedTypeName name="Ahorcado.AhorcadoPOO"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="polimorfismo.Persona"/>
     <fullyQualifiedTypeName name="polimorfismo.Empleado"/>
     <fullyQualifiedTypeName name="polimorfismo.padre"/>
     <fullyQualifiedTypeName name="padres.padre"/>
@@ -52,12 +44,20 @@
     <fullyQualifiedTypeName name="Ejemplos.cicloDaw"/>
     <fullyQualifiedTypeName name="componentes.boton"/>
     <fullyQualifiedTypeName name="javax.swing.JButton"/>
-    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
-    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
     <fullyQualifiedTypeName name="componentes.campoTexto"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
     <fullyQualifiedTypeName name="componentes.textArea"/>
-    <fullyQualifiedTypeName name="javax.swing.WindowConstants"/>
     <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+    <fullyQualifiedTypeName name="componentes.CheckBox"/>
+    <fullyQualifiedTypeName name="componentes.ventana_RadioButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
+    <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
+    <fullyQualifiedTypeName name="componentes.ventana_ComboBox"/>
+    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
+    <fullyQualifiedTypeName name="javax.swing.WindowConstants"/>
+    <fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
+    <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 </qualifiedTypeNameHistroy>
