@@ -35,15 +35,9 @@ public class Fechahoy1 extends JFrame{
 		int dia=c.get(Calendar.DAY_OF_MONTH);
 		int mes= c.get(Calendar.MONTH)+1;
 		int anio=c.get(Calendar.YEAR);
-		
-		String cad="";
-		if (dia<10)
-			cad+="0";
-		cad+=dia;
-		cad+=" / ";
-		if (mes<10)
-			cad+=
 		return null;
+		
+	
 	}
 	
 	public static void main(String[] args) {
