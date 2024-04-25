@@ -6,7 +6,8 @@ public class E_BorderLayout extends JFrame{
 
 	public E_BorderLayout()
 	{
-		setLayout(new BorderLayout(5,10));
+		setLayout(new BorderLayout(10,10));
+		
 		
 		add(new JButton("Uno"),BorderLayout.CENTER);
 		add(new JButton("Dos"),BorderLayout.SOUTH);
