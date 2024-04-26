@@ -36,7 +36,7 @@ public class conversorRomanov2 extends JFrame implements ActionListener {
 	 panel1.add(TextField1);
 	 
 	 //creamos panel2 boton con imagen
-	 button= new JButton(new ImageIcon("C:\\Users\\ibane\\OneDrive\\Documentos\\Eclipse\\img\\flecha.png"));
+	 button= new JButton(new ImageIcon("C:\\Users\\AntonioI\\Documents\\Eclipse\\img\\flecha.png"));
 	 button.setContentAreaFilled(false);
 	 button.setBorder(null);
 	 button.addActionListener(this);
