@@ -61,7 +61,6 @@ public class dado1 extends JFrame implements ActionListener {
 			case 4: tirada.setText("4"); break;
 			case 5: tirada.setText("5"); break;
 			case 6: tirada.setText("6"); break;
-				
 			
 			}
 		}

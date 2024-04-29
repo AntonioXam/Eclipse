@@ -1,4 +1,4 @@
-package clas;
+package ventanaFecha;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -147,10 +147,9 @@ public class Fecha {
 	 * @return
 	 */
 	public boolean esBisiesto() {
-		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+		if((year%4==0 && year%100 !=0) || (year%400==0))
 			return true;
-		else
-			return false;
+		return false;
 	}
 	
 	/**

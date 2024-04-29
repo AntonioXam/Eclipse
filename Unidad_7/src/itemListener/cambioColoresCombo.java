@@ -30,6 +30,13 @@ public class cambioColoresCombo extends JFrame implements ItemListener {
 	
 	public static void main(String[] args) {
 		
+		cambioColoresCombo ccc = new cambioColoresCombo();
+		ccc.setSize(300, 300);
+		ccc.setLayout(null);
+		ccc.setVisible(true);
+		ccc.setLocationRelativeTo(null);
+		ccc.setTitle("Cambio de Colores");
+		ccc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 
@@ -38,6 +45,21 @@ public class cambioColoresCombo extends JFrame implements ItemListener {
 		if (e.getSource()==jComboBox) {
 			String selecionado = (String)jComboBox.getSelectedItem();
 			
+			switch (selecionado) {
+			case "rojo":
+				getContentPane().setBackground(java.awt.Color.RED);
+				break;
+				case "azul":
+					getContentPane().setBackground(java.awt.Color.BLUE);
+					break;
+					case "verde":
+						getContentPane().setBackground(java.awt.Color.GREEN);
+						break;
+					case "amarillo":
+						getContentPane().setBackground(java.awt.Color.YELLOW);
+						break;
+						
+			}
 			
 		}
 		
