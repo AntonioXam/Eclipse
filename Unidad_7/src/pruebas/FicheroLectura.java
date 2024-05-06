@@ -8,7 +8,7 @@ public class FicheroLectura {
 
 	public static void main(String[] args) {
 
-		File f = new File("C:\\ProgramacionTXT\\100tifiko.txt");
+		File f = new File("C:\\ProgramacionTXT\\textoguardado.txt");
 
 		try {
 			Scanner sc = new Scanner(f);
