@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="componentes.CheckBox"/>
-    <fullyQualifiedTypeName name="componentes.ventana_RadioButton"/>
-    <fullyQualifiedTypeName name="componentes.ventana_ComboBox"/>
-    <fullyQualifiedTypeName name="layout.Ejemplo_GridLayout"/>
-    <fullyQualifiedTypeName name="layout.Ejemplo_JPanel"/>
-    <fullyQualifiedTypeName name="layout.Fechahoy1"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="listener.ventanaCerrar"/>
-    <fullyQualifiedTypeName name="listener.colores"/>
-    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
     <fullyQualifiedTypeName name="listener.ventanaPrincipal"/>
     <fullyQualifiedTypeName name="javax.swing.WindowConstants"/>
     <fullyQualifiedTypeName name="listener.ventanaSecundaria"/>
@@ -55,9 +45,19 @@
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="designer.usuario"/>
     <fullyQualifiedTypeName name="java.lang.UnknownError"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.hsqldb.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="piezas.piezas"/>
+    <fullyQualifiedTypeName name="proveedor.proveedor"/>
+    <fullyQualifiedTypeName name="envios.envios"/>
 </qualifiedTypeNameHistroy>
