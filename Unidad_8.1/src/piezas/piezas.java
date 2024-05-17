@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 
 
 public class piezas {
@@ -25,10 +28,10 @@ public class piezas {
 			if (conexion==null) {
 				Class.forName(driver);
 				conexion = DriverManager.getConnection(url);
-				System.out.println("Conexion establecida correctamente");
+				JOptionPane.showMessageDialog(null,"Conexion establecida correctamente","Inicio",JOptionPane.INFORMATION_MESSAGE);
 			}
 		} catch (Exception e) {
-			System.out.println("Error al establecer la conexión");
+			JOptionPane.showMessageDialog(null, "Error en la conexión", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 		return conexion;
 	}
@@ -38,7 +41,7 @@ public class piezas {
 		try {
 			conexion.close();
 		} catch (Exception e) {
-			System.out.println("Error al cerrar la conexión");
+			JOptionPane.showMessageDialog(null,"Error al cerrar la conexión","Error",JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
@@ -63,6 +66,31 @@ public class piezas {
 		
 		} catch (SQLException e) {
 			System.out.println("Error en la consulta");
+		}
+	}
+	
+
+	public void mostrarTabla(DefaultTableModel t) {
+		
+		try {
+			String consulta = "SELECT * from P";
+			Statement st = conexion.createStatement();
+			ResultSet rs = st.executeQuery(consulta);
+			Object[] fila = new Object[t.getColumnCount()];
+			while (rs.next()) {
+				fila[0]= rs.getString("pn");
+				fila[1]= rs.getString("pnombre");
+				fila[2]= rs.getString("color");
+				fila[3]= rs.getInt("peso");
+				fila[4]= rs.getString("ciudad");
+				t.addRow(fila);
+				
+			}
+			st.close();
+			rs.close();
+		
+		} catch (SQLException e) {
+			JOptionPane.showMessageDialog(null, "Error en la conexión","Error",JOptionPane.ERROR_MESSAGE);
 		}
 	}
 }

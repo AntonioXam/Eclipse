@@ -7,6 +7,9 @@ package envios;
 	import java.sql.SQLException;
 	import java.sql.Statement;
 
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 public class envios {
 
 
@@ -25,10 +28,10 @@ public class envios {
 				if (conexion==null) {
 					Class.forName(driver);
 					conexion = DriverManager.getConnection(url);
-					System.out.println("Conexion establecida correctamente");
+					JOptionPane.showMessageDialog(null,"Conexion establecida correctamente","Inicio",JOptionPane.INFORMATION_MESSAGE);
 				}
 			} catch (Exception e) {
-				System.out.println("Error al establecer la conexión");
+				JOptionPane.showMessageDialog(null, "Error en la conexión", "Error", JOptionPane.ERROR_MESSAGE);
 			}
 			return conexion;
 		}
@@ -38,23 +41,24 @@ public class envios {
 			try {
 				conexion.close();
 			} catch (Exception e) {
-				System.out.println("Error al cerrar la conexión");
+				JOptionPane.showMessageDialog(null,"Error al cerrar la conexión","Error",JOptionPane.ERROR_MESSAGE);
 			}
 		}
 		
 		
-		public void mostrar() {
+		public void mostrarTabla(DefaultTableModel t) {
 			
 			try {
 				String consulta = "SELECT * from SP";
 				Statement st = conexion.createStatement();
 				ResultSet rs = st.executeQuery(consulta);
+				Object[] fila = new Object[t.getColumnCount()];
 				
 				while (rs.next()) {
-					System.out.print("\n"+ rs.getString("sn"));
-					System.out.print("\t"+ rs.getString("pn"));
-					System.out.print("\t"+ rs.getInt("cant"));
-					
+					fila[0]= rs.getString("sn");
+					fila[1]= rs.getString("pn");
+					fila[2]= rs.getInt("cant");
+					t.addRow(fila);
 					
 				}
 				st.close();
