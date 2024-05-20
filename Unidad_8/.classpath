@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/drivers/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/envios/hsqldb.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

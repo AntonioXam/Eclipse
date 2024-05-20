@@ -16,7 +16,7 @@ public class envios {
 		private Connection conexion= null;
 		
 		
-		private String nombreDB="C:\\envios\\S-P-SP";
+		private String nombreDB="C:/esepe/envios";
 		
 		private String driver="org.hsqldb.jdbcDriver";
 		
@@ -28,8 +28,7 @@ public class envios {
 				if (conexion==null) {
 					Class.forName(driver);
 					conexion = DriverManager.getConnection(url);
-					JOptionPane.showMessageDialog(null,"Conexion establecida correctamente","Inicio",JOptionPane.INFORMATION_MESSAGE);
-				}
+					}
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(null, "Error en la conexión", "Error", JOptionPane.ERROR_MESSAGE);
 			}

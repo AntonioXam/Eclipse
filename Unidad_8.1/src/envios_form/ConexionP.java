@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 public class ConexionP {
 
 	private Connection conexion= null;	
-	private String nombreDB="C:\\envios\\S-P-SP";
+	private String nombreDB="C:\\Users\\ibane\\OneDrive\\Documentos\\Eclipse\\envios\\S-P-SP";
 	private String driver="org.hsqldb.jdbcDriver";
 	private String url="jdbc:hsqldb:file:" + nombreDB;
 	

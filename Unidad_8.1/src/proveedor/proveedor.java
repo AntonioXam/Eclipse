@@ -14,10 +14,9 @@ import javax.swing.table.DefaultTableModel;
 
 public class proveedor {
 
-	private Connection conexion= null;
+	private Connection conexion = null;
 	
-	
-	private String nombreDB="C:\\envios\\S-P-SP";
+	private String nombreDB="C:/esepe/envios";
 	
 	private String driver="org.hsqldb.jdbcDriver";
 	
@@ -26,16 +25,19 @@ public class proveedor {
 	
 	public Connection obtenerconexion() {
 		try {
-			if (conexion==null) {
+			if (conexion == null) {
 				Class.forName(driver);
-				conexion = DriverManager.getConnection(url);
-				JOptionPane.showMessageDialog(null,"Conexion establecida correctamente","Inicio",JOptionPane.INFORMATION_MESSAGE);
+				conexion = DriverManager.getConnection(url, "sa", "");
+			
 			}
-		} catch (Exception e) {
+			
+		} catch ( Exception e) {
 			JOptionPane.showMessageDialog(null, "Error en la conexión", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 		return conexion;
 	}
+	
+	
 	
 	
 	public void desconectar() {
@@ -92,6 +94,11 @@ public void mostrarTabla(DefaultTableModel t) {
 			System.out.println("Error en la consulta");
 		}
 	}
+
+
+
 }
+
+
 
 

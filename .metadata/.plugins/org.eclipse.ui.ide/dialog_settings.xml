@@ -29,8 +29,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\AntonioI\Documents\Eclipse"/>
 			<item value="C:\Users\ibane\OneDrive\Documentos\Eclipse"/>
+			<item value="C:\Users\AntonioI\Documents\Eclipse"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
