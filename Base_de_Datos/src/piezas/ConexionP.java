@@ -1,4 +1,4 @@
-package proveedor;
+package piezas;
 
 
 import java.sql.Connection;
@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class ConexionS {
+public class ConexionP {
 
     private Connection conexion = null;    
     private String nombreDB = "C:/esepe/envios";
@@ -20,7 +20,7 @@ public class ConexionS {
     private String user = "SA";
     private String password = "";
 
-    public ConexionS() {
+    public ConexionP() {
         try {
             if (conexion == null) {
                 Class.forName(driver);
@@ -41,22 +41,23 @@ public class ConexionS {
         }
     }
 
-    public void mostrarS(JTable t) {
+    public void mostrarP(JTable t) {
         try {
-            String consulta = "SELECT * FROM S";
+            String consulta = "SELECT * FROM P";
             Statement st = conexion.createStatement();
             ResultSet rs = st.executeQuery(consulta);
 
             DefaultTableModel modelo = new DefaultTableModel();
-            String atributos[] = {"Código", "Nombre","Estado", "Ciudad"};
+            String atributos[] = {"Código", "Nombre", "Color", "Peso", "Ciudad"};
             modelo.setColumnIdentifiers(atributos);
 
             while (rs.next()) {
-                Object[] fila = new Object[4];
-                fila[0] = rs.getString("sn");
-                fila[1] = rs.getString("snombre");
-                fila[2] = rs.getInt("Estado");
-                fila[3] = rs.getString("ciudad");
+                Object[] fila = new Object[5];
+                fila[0] = rs.getString("pn");
+                fila[1] = rs.getString("pnombre");
+                fila[2] = rs.getString("color");
+                fila[3] = rs.getInt("peso");
+                fila[4] = rs.getString("ciudad");
                 modelo.addRow(fila);
             }
 
@@ -69,9 +70,9 @@ public class ConexionS {
         }
     }
 
-    public void insertarS(String cod, String nom, String est, String ciud) {
+    public void insertarP(String cod, String nom, String col, String pes, String ciud) {
         try {
-            String sql = "INSERT INTO S VALUES (?, ?, ?, ?);";
+            String sql = "INSERT INTO P VALUES (?, ?, ?, ?, ?);";
             PreparedStatement pStatement = conexion.prepareStatement(sql);
 
             pStatement.setString(1, cod);
@@ -79,13 +80,18 @@ public class ConexionS {
             
             
             
-			if (est.isEmpty()) {
+			if (col.isEmpty()) {
 				pStatement.setString(3, null);
 			} else {
-				pStatement.setInt(3, Integer.parseInt(est));
+				pStatement.setString(3, col);
 			}
             
-            pStatement.setString(4, ciud);
+			if (pes.isEmpty()) {
+				pStatement.setString(4, null);
+			} else {
+				pStatement.setInt(4, Integer.parseInt(pes));
+			}
+            pStatement.setString(5, ciud);
 
             pStatement.executeUpdate();
             pStatement.close();

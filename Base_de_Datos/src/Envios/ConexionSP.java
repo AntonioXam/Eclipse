@@ -1,4 +1,4 @@
-package proveedor;
+package Envios;
 
 
 import java.sql.Connection;
@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class ConexionS {
+public class ConexionSP {
 
     private Connection conexion = null;    
     private String nombreDB = "C:/esepe/envios";
@@ -20,7 +20,7 @@ public class ConexionS {
     private String user = "SA";
     private String password = "";
 
-    public ConexionS() {
+    public ConexionSP() {
         try {
             if (conexion == null) {
                 Class.forName(driver);
@@ -41,22 +41,22 @@ public class ConexionS {
         }
     }
 
-    public void mostrarS(JTable t) {
+    public void mostrarSP(JTable t) {
         try {
-            String consulta = "SELECT * FROM S";
+            String consulta = "SELECT * FROM SP";
             Statement st = conexion.createStatement();
             ResultSet rs = st.executeQuery(consulta);
 
             DefaultTableModel modelo = new DefaultTableModel();
-            String atributos[] = {"Código", "Nombre","Estado", "Ciudad"};
+            String atributos[] = {"CódigoS", "CódigoP", "Cantidad"};
             modelo.setColumnIdentifiers(atributos);
 
             while (rs.next()) {
-                Object[] fila = new Object[4];
+                Object[] fila = new Object[3];
                 fila[0] = rs.getString("sn");
-                fila[1] = rs.getString("snombre");
-                fila[2] = rs.getInt("Estado");
-                fila[3] = rs.getString("ciudad");
+                fila[1] = rs.getString("pn");
+                fila[2] = rs.getInt("cant");
+                
                 modelo.addRow(fila);
             }
 
@@ -69,24 +69,20 @@ public class ConexionS {
         }
     }
 
-    public void insertarS(String cod, String nom, String est, String ciud) {
+    public void insertarSP(String cods, String codp, String cant) {
         try {
-            String sql = "INSERT INTO S VALUES (?, ?, ?, ?);";
+            String sql = "INSERT INTO SP VALUES (?, ?, ?);";
             PreparedStatement pStatement = conexion.prepareStatement(sql);
 
-            pStatement.setString(1, cod);
-            pStatement.setString(2, nom);
+            pStatement.setString(1, cods);
+            pStatement.setString(2, codp);
             
-            
-            
-			if (est.isEmpty()) {
+			if (cant.isEmpty()) {
 				pStatement.setString(3, null);
 			} else {
-				pStatement.setInt(3, Integer.parseInt(est));
+				pStatement.setInt(3, Integer.parseInt(cant));
 			}
             
-            pStatement.setString(4, ciud);
-
             pStatement.executeUpdate();
             pStatement.close();
 
