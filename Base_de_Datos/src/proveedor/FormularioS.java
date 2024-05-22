@@ -71,22 +71,22 @@ public class FormularioS extends JFrame {
 
         JLabel lblNewLabel_1_1 = new JLabel("Nombre:");
         lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-        lblNewLabel_1_1.setBounds(23, 119, 56, 14);
+        lblNewLabel_1_1.setBounds(197, 75, 56, 14);
         contentPane.add(lblNewLabel_1_1);
 
         nombretxt = new JTextField();
         nombretxt.setColumns(10);
-        nombretxt.setBounds(89, 116, 86, 20);
+        nombretxt.setBounds(263, 72, 86, 20);
         contentPane.add(nombretxt);
 
         JLabel lblNewLabel_1_3 = new JLabel("Estado:");
         lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 11));
-        lblNewLabel_1_3.setBounds(197, 78, 46, 14);
+        lblNewLabel_1_3.setBounds(23, 122, 46, 14);
         contentPane.add(lblNewLabel_1_3);
 
         pesoTXT = new JTextField();
         pesoTXT.setColumns(10);
-        pesoTXT.setBounds(264, 75, 86, 20);
+        pesoTXT.setBounds(90, 119, 86, 20);
         contentPane.add(pesoTXT);
 
         JLabel lblNewLabel_1_4 = new JLabel("Ciudad:");

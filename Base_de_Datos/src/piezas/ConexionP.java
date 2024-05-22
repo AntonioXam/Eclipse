@@ -24,7 +24,7 @@ public class ConexionP {
         try {
             if (conexion == null) {
                 Class.forName(driver);
-                conexion = DriverManager.getConnection(url, user, password);
+                conexion = DriverManager.getConnection(url,user,password);
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "No se ha podido establecer la conexión con la BD", "Error de conexión", JOptionPane.ERROR_MESSAGE);

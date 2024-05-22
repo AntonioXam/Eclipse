@@ -52,7 +52,7 @@ public class ConexionS {
             modelo.setColumnIdentifiers(atributos);
 
             while (rs.next()) {
-                Object[] fila = new Object[4];
+                Object[] fila = new Object[modelo.getColumnCount()];
                 fila[0] = rs.getString("sn");
                 fila[1] = rs.getString("snombre");
                 fila[2] = rs.getInt("Estado");
@@ -76,15 +76,11 @@ public class ConexionS {
 
             pStatement.setString(1, cod);
             pStatement.setString(2, nom);
-            
-            
-            
-			if (est.isEmpty()) {
-				pStatement.setString(3, null);
-			} else {
+           
+			if (est.isEmpty()) 
+				pStatement.setString(3,null);
+			else 
 				pStatement.setInt(3, Integer.parseInt(est));
-			}
-            
             pStatement.setString(4, ciud);
 
             pStatement.executeUpdate();
@@ -93,7 +89,7 @@ public class ConexionS {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Datos incorrectos.\nComprueba que el código tiene 3 dígitos o caracteres y no está duplicado", "Error al insertar el registro en la BD", JOptionPane.ERROR_MESSAGE);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "El campo Peso debe ser un número", "Error en el formato del peso", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "El campo Peso debe ser un número", "Error en el formato del estado", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
