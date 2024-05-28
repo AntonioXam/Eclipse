@@ -24,7 +24,7 @@ public class FormularioSP extends JFrame {
     private JTable table;
 
     /**
-     * Launch the application.
+     * Ejecutando la apliación
      */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -40,15 +40,16 @@ public class FormularioSP extends JFrame {
         });
     }
 
+    //Atributo para conectar con la BD en la tabla SP
     private ConexionSP con;
 
     /**
-     * Create the frame.
+     * Creando la Ventana
      */
     public FormularioSP() {
         setTitle("ENVIOS");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 412, 524);
+        setBounds(100, 100, 448, 524);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -59,36 +60,39 @@ public class FormularioSP extends JFrame {
         lblNewLabel.setBounds(23, 40, 207, 14);
         contentPane.add(lblNewLabel);
 
-        JLabel lblNewLabel_1 = new JLabel("Código Proveedor:");
+        JLabel lblNewLabel_1 = new JLabel("Proveedor:");
         lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-        lblNewLabel_1.setBounds(23, 78, 111, 14);
+        lblNewLabel_1.setBounds(23, 110, 111, 14);
         contentPane.add(lblNewLabel_1);
 
         codigotxt = new JTextField();
-        codigotxt.setBounds(144, 75, 86, 20);
+        codigotxt.setBounds(95, 104, 74, 26);
         contentPane.add(codigotxt);
         codigotxt.setColumns(10);
 
-        JLabel lblNewLabel_1_1 = new JLabel("Código Piezas:");
+        JLabel lblNewLabel_1_1 = new JLabel("Piezas:");
         lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-        lblNewLabel_1_1.setBounds(23, 119, 111, 14);
+        lblNewLabel_1_1.setBounds(23, 164, 111, 14);
         contentPane.add(lblNewLabel_1_1);
 
         nombretxt = new JTextField();
         nombretxt.setColumns(10);
-        nombretxt.setBounds(144, 116, 86, 20);
+        nombretxt.setBounds(95, 161, 74, 23);
         contentPane.add(nombretxt);
 
         JLabel lblNewLabel_1_3 = new JLabel("Cantidad:");
         lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 11));
-        lblNewLabel_1_3.setBounds(23, 161, 74, 14);
+        lblNewLabel_1_3.setBounds(203, 164, 74, 14);
         contentPane.add(lblNewLabel_1_3);
 
         pesoTXT = new JTextField();
         pesoTXT.setColumns(10);
-        pesoTXT.setBounds(144, 158, 86, 20);
+        pesoTXT.setBounds(295, 158, 74, 26);
         contentPane.add(pesoTXT);
 
+        /**
+         * Método del botón "Guardar" que comprueba si los campos del formulario estan vacios e inserta los datos en la BD
+         */
         JButton botonGuardar = new JButton("Guardar");
         botonGuardar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -100,8 +104,12 @@ public class FormularioSP extends JFrame {
 
                     // Comprobamos que los campos no estén vacíos
                     if (codigos.isEmpty() || codigop.isEmpty()) {
-                        JOptionPane.showMessageDialog(null, "Los campos Código-S y Código-P no pueden estar vacíos", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Los campos Proveedor y Piezas  no pueden estar vacíos", "Error", JOptionPane.ERROR_MESSAGE);
+                        
+                     
                     } else {
+                    	
+                    // Conexion con la base de datos mostrando la tabla e insertando lo introducido en el formulario
                         con = new ConexionSP();
                         con.insertarSP(codigos,codigop,cantidad);
                         con.mostrarSP(table);
@@ -113,16 +121,24 @@ public class FormularioSP extends JFrame {
                 }
             }
         });
-        botonGuardar.setBounds(60, 214, 118, 23);
+        
+        botonGuardar.setBounds(95, 214, 118, 23);
         contentPane.add(botonGuardar);
 
+       
+        /**
+         * Botón para limpiar los campos del formulario
+         */
         JButton botonBorrar = new JButton("Borrar");
         botonBorrar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 limpiar();
             }
         });
-        botonBorrar.setBounds(216, 214, 118, 23);
+        
+        
+        
+        botonBorrar.setBounds(251, 214, 118, 23);
         contentPane.add(botonBorrar);
 
         JLabel lblNewLabel_2 = new JLabel("Listado de envios:");
@@ -130,17 +146,21 @@ public class FormularioSP extends JFrame {
         contentPane.add(lblNewLabel_2);
 
         JScrollPane scrollPane = new JScrollPane();
-        scrollPane.setBounds(29, 318, 334, 134);
+        scrollPane.setBounds(29, 301, 362, 159);
         contentPane.add(scrollPane);
 
         table = new JTable();
         scrollPane.setViewportView(table);
 
+        //Llamada a la Clase para la conexión con la BD en la tabla SP
         con = new ConexionSP();
         con.mostrarSP(table);
         con.desconectar();
     }
 
+    
+   
+    //Método para borrar los campos del formulario
     public void limpiar() {
         codigotxt.setText("");
         nombretxt.setText("");
