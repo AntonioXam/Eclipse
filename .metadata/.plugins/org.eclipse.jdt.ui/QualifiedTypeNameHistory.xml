@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
-    <fullyQualifiedTypeName name="changeListener.Resoluciones"/>
-    <fullyQualifiedTypeName name="itemListener.cambioColoresCombo"/>
-    <fullyQualifiedTypeName name="javax.management.loading.PrivateClassLoader"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
     <fullyQualifiedTypeName name="ejeciciosJFrame.Formulario2"/>
     <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
     <fullyQualifiedTypeName name="ventanaFecha.Fecha"/>
@@ -57,7 +51,13 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Info"/>
+    <fullyQualifiedTypeName name="boleFinal"/>
+    <fullyQualifiedTypeName name="componentes.boton"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="infoVentana"/>
+    <fullyQualifiedTypeName name="listener.ventanaSecundaria"/>
+    <fullyQualifiedTypeName name="infoVentana2"/>
 </qualifiedTypeNameHistroy>

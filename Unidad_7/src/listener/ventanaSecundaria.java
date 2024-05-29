@@ -14,28 +14,30 @@ public class ventanaSecundaria extends JDialog implements ActionListener {
 	private JLabel label;
 	
 	
-	public ventanaSecundaria(ventanaPrincipal parent, boolean modal) {
-		super (parent,modal);
+
+
+	public ventanaSecundaria(ActionListener actionListener, boolean b) {
+		super ();
 		
 		setLayout(null);
-		setBounds(0,0,250,200);
+		setBounds(0,0,350,200);
 		setLocationRelativeTo(null);
 		
-		label= new JLabel("Esta es la ventana secundaria");
-		label.setBounds(35, 30, 200, 30);
+		label= new JLabel("Generador de números de la LOTERIA PRIMITIVA");
+		label.setBounds(35, 30, 350, 30);
 		add(label);
 		
 		boton = new JButton("Volver");
-		boton.setBounds(40, 80, 150, 30);
+		boton.setBounds(80, 80, 150, 30);
 		add(boton);
 		boton.addActionListener(this);
-		
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == boton) {
 			setVisible(false);
+			
 		}
 		
 	}
